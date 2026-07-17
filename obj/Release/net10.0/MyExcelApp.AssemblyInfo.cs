@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyExcelApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb02552bff032c25fb5f980a88be06002cfb6c61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6e07a3e0c5a60cd591491d15c32cf629bc413b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyExcelApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyExcelApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
