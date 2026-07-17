@@ -6,6 +6,7 @@ C:\inetpub\MyExcelApp\bin\Debug\net10.0\publish\appsettings.json
 C:\inetpub\MyExcelApp\bin\Debug\net10.0\publish\MyExcelApp.deps.json
 C:\inetpub\MyExcelApp\bin\Debug\net10.0\publish\MyExcelApp.runtimeconfig.json
 C:\inetpub\MyExcelApp\bin\Debug\net10.0\publish\MyExcelApp.staticwebassets.endpoints.json
+C:\inetpub\MyExcelApp\bin\Debug\net10.0\publish\wwwroot\version.json
 C:\inetpub\MyExcelApp\bin\Debug\net10.0\MyExcelApp.staticwebassets.runtime.json
 C:\inetpub\MyExcelApp\bin\Debug\net10.0\MyExcelApp.staticwebassets.endpoints.json
 C:\inetpub\MyExcelApp\bin\Debug\net10.0\MyExcelApp.exe
@@ -371,6 +372,7 @@ C:\inetpub\MyExcelApp\obj\Debug\net10.0\MyExcelApp.MvcApplicationPartsAssemblyIn
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\MyExcelApp.MvcApplicationPartsAssemblyInfo.cache
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\MyExcelApp.RazorAssemblyInfo.cache
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\MyExcelApp.RazorAssemblyInfo.cs
+C:\inetpub\MyExcelApp\obj\Debug\net10.0\MyExcelApp.sourcelink.json
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -440,6 +442,8 @@ C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\eo9ke9ljf4-{0}-2z0ns9nrw6-2z0
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\b2c3a44y4f-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\yepqxyxddj-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\vpkxqp8dwx-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\dgnmn01pws-{0}-ijvo6cs9ua-ijvo6cs9ua.gz
+C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\vcxkhw8nvv-{0}-o72wc4bm1v-o72wc4bm1v.gz
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\h0o67rzj8l-{0}-kva5d914fq-kva5d914fq.gz
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\compressed\563ijdn118-{0}-kva5d914fq-kva5d914fq.gz
 C:\inetpub\MyExcelApp\obj\Debug\net10.0\staticwebassets.build.json
