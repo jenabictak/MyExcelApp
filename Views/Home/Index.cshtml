@@ -1,0 +1,1166 @@
+@{
+    ViewData["Title"] = "گزارش تولید و پخت باربد تجارت رضوان";
+    Layout = null;
+    var data = Model as MyExcelApp.Models.FormData ?? new MyExcelApp.Models.FormData();
+}
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wrapper {
+            max-width: 800px;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 35px;
+            flex: 1;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ===== هدر بالا ===== */
+        .top-header {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            padding: 15px 25px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .top-header .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .top-header .brand .logo-icon {
+            font-size: 28px;
+        }
+        .top-header .brand .brand-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+        }
+        .top-header .brand .brand-name span {
+            color: #667eea;
+        }
+        .top-header .nav-links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .top-header .nav-links a {
+            padding: 6px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .top-header .nav-links a.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .top-header .nav-links a:not(.active) {
+            background: #f1f3f5;
+            color: #555;
+        }
+        .top-header .nav-links a:not(.active):hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+        }
+        
+        .header {
+            text-align: center;
+            margin: 20px 0 25px 0;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .header .logo { font-size: 42px; display: block; margin-bottom: 5px; }
+        .header h2 {
+            color: #333;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .header h2 span { color: #667eea; }
+        .header .subtitle { color: #888; font-size: 13px; }
+        
+        .section-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 25px 0 15px 0;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        }
+        .form-group input[readonly] {
+            background: #e9ecef;
+            color: #333;
+            cursor: default;
+        }
+        .form-group textarea {
+            height: 70px;
+            resize: vertical;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .form-row-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+        }
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        .btn-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .btn-retry {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+            display: none;
+        }
+        .btn-retry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+        }
+        .btn-retry.show {
+            display: block;
+        }
+        
+        .message {
+            background: #d4edda;
+            color: #155724;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-right: 4px solid #28a745;
+            font-weight: 500;
+        }
+        .message-error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-right: 4px solid #dc3545;
+            font-weight: 500;
+        }
+        
+        .auto-calc {
+            background: #e8f5e9 !important;
+            border-color: #4caf50 !important;
+            color: #2e7d32 !important;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .field-desc {
+            display: none;
+            font-size: 12px;
+            color: #6c757d;
+            margin-top: 4px;
+            padding: 4px 8px;
+            background: #f1f3f5;
+            border-radius: 4px;
+            border-right: 3px solid #667eea;
+        }
+        .field-desc.show {
+            display: block;
+            animation: fadeInDesc 0.3s ease-in;
+        }
+        @@keyframes fadeInDesc {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .btn-toggle-desc {
+            padding: 6px 16px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 15px;
+        }
+        .btn-toggle-desc:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+        .btn-toggle-desc.active {
+            background: #28a745;
+        }
+        .btn-toggle-desc.active:hover {
+            background: #218838;
+        }
+        
+        .status-bar {
+            font-size: 13px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .status-bar.online {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status-bar.offline {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .status-bar.checking {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .status-bar .status-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+        .status-bar .status-dot.green { background: #28a745; }
+        .status-bar .status-dot.red { background: #dc3545; }
+        .status-bar .status-dot.yellow { background: #ffc107; }
+        
+        .btn-check-server {
+            padding: 4px 14px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.3s ease;
+        }
+        .btn-check-server:hover {
+            background: #0056b3;
+        }
+        
+        .saved-badge {
+            display: none;
+            background: #28a745;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .saved-badge.show {
+            display: inline-block;
+        }
+        
+        /* ===== فوتر ===== */
+        .footer {
+            background: white;
+            border-radius: 0 0 20px 20px;
+            padding: 15px 25px;
+            margin-top: 0;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            border-top: 2px solid #f0f0f0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .footer .powered {
+            font-size: 12px;
+            color: #aaa;
+        }
+        .footer .powered strong {
+            color: #667eea;
+            font-weight: 700;
+        }
+        .footer .support {
+            margin-top: 5px;
+            font-size: 13px;
+            color: #555;
+        }
+        .footer .support a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            direction: ltr;
+            display: inline-block;
+        }
+        .footer .support a:hover {
+            text-decoration: underline;
+        }
+        .footer .glass-icon {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        
+        @@media (max-width: 600px) {
+            .container { padding: 20px; }
+            .form-row { grid-template-columns: 1fr; }
+            .form-row-3 { grid-template-columns: 1fr; }
+            .header h2 { font-size: 18px; }
+            .top-header { flex-direction: column; text-align: center; }
+            .top-header .nav-links { justify-content: center; }
+        }
+    </style>
+    <script>
+        // ================================================================
+        // 1. توابع فرمت اعداد
+        // ================================================================
+        function formatNumber(num) {
+            if (num === '' || num === null || num === undefined) return '';
+            var parts = num.toString().split('.');
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            if (parts.length > 1 && parseFloat('0.' + parts[1]) === 0) {
+                return parts[0];
+            }
+            return parts.join('.');
+        }
+
+        function parseNumber(str) {
+            if (!str || str === '') return 0;
+            return parseFloat(str.replace(/,/g, '')) || 0;
+        }
+
+        function formatInput(el) {
+            if (el.value && el.value !== '') {
+                var num = parseNumber(el.value);
+                if (num > 0 || num === 0) {
+                    var str = num.toString();
+                    if (str.includes('.')) {
+                        var parts = str.split('.');
+                        var decimal = parts[1] || '0';
+                        if (parseFloat('0.' + decimal) > 0) {
+                            el.value = formatNumber(str);
+                        } else {
+                            el.value = formatNumber(parts[0]);
+                        }
+                    } else {
+                        el.value = formatNumber(str);
+                    }
+                }
+            }
+        }
+
+        // ================================================================
+        // 2. محاسبات خودکار
+        // ================================================================
+        function calculateMoldWeight() {
+            var countEl = document.getElementById('MoldCount');
+            var weightEl = document.getElementById('MoldWeight');
+            var totalEl = document.getElementById('TotalMoldWeight');
+            
+            var count = parseNumber(countEl.value);
+            var weight = parseNumber(weightEl.value);
+            
+            if (count > 0 && weight > 0) {
+                var result = count * weight;
+                totalEl.value = formatNumber(result.toFixed(2));
+                totalEl.style.backgroundColor = '#e8f5e9';
+                totalEl.style.borderColor = '#4caf50';
+            } else {
+                totalEl.value = '';
+                totalEl.style.backgroundColor = '#f8f9fa';
+                totalEl.style.borderColor = '#e1e5e9';
+            }
+        }
+
+        function calculateTotalMaterials() {
+            var materials = [
+                'CheeseFrozen', 'CheeseDefrost', 'Oil', 'Starch', 'Ricotta', 
+                'Phosphate', 'Water', 'Stabilizer', 'Citrate', 'Salt', 
+                'WasteReturn', 'Essence', 'CheeseGolpayegan', 'Sorbate', 
+                'PowderCode24', 'PowderCodeF', 'ColorAnnatto', 'PlasticUnderLayer',
+                'RawMaterial1', 'RawMaterial2', 'RawMaterial3'
+            ];
+            
+            var total = 0;
+            materials.forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el && el.value) {
+                    total += parseNumber(el.value);
+                }
+            });
+            
+            var totalInput = document.getElementById('TotalInputWeight');
+            if (total > 0) {
+                totalInput.value = formatNumber(total.toFixed(2));
+                totalInput.style.backgroundColor = '#e8f5e9';
+                totalInput.style.borderColor = '#4caf50';
+            } else {
+                totalInput.value = '';
+                totalInput.style.backgroundColor = '#f8f9fa';
+                totalInput.style.borderColor = '#e1e5e9';
+            }
+        }
+
+        // ================================================================
+        // 3. بررسی اتصال به سرور
+        // ================================================================
+        var isServerOnline = false;
+        var isChecking = false;
+        var savedFormData = null;
+
+        function checkServerConnection(callback) {
+            if (isChecking) return;
+            isChecking = true;
+            
+            var statusBar = document.getElementById('statusBar');
+            statusBar.className = 'status-bar checking';
+            statusBar.innerHTML = '<span><span class="status-dot yellow"></span> در حال بررسی اتصال به سرور...</span>';
+            
+            fetch('/Home/CheckConnection', {
+                method: 'HEAD',
+                cache: 'no-cache',
+                headers: { 'Cache-Control': 'no-cache' }
+            })
+            .then(function(response) {
+                isServerOnline = true;
+                isChecking = false;
+                updateStatusBar(true);
+                if (callback) callback(true);
+            })
+            .catch(function(error) {
+                isServerOnline = false;
+                isChecking = false;
+                updateStatusBar(false);
+                if (callback) callback(false);
+            });
+        }
+
+        function updateStatusBar(online) {
+            var statusBar = document.getElementById('statusBar');
+            var submitBtn = document.getElementById('submitBtn');
+            var retryBtn = document.getElementById('retryBtn');
+            var savedBadge = document.getElementById('savedBadge');
+            
+            if (online) {
+                statusBar.className = 'status-bar online';
+                statusBar.innerHTML = '<span><span class="status-dot green"></span> ✅ اتصال به سرور برقرار است</span><span><button type="button" class="btn-check-server" onclick="checkServerConnection()">🔄 بررسی مجدد</button></span>';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'ثبت اطلاعات';
+                retryBtn.classList.remove('show');
+                
+                if (savedFormData) {
+                    retryBtn.classList.add('show');
+                    retryBtn.textContent = '📤 ارسال اطلاعات ذخیره شده';
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '⏳ از دکمه سبز استفاده کنید';
+                    savedBadge.classList.add('show');
+                    savedBadge.textContent = '💾 اطلاعات ذخیره شده';
+                } else {
+                    savedBadge.classList.remove('show');
+                }
+            } else {
+                statusBar.className = 'status-bar offline';
+                statusBar.innerHTML = '<span><span class="status-dot red"></span> ❌ اتصال به سرور برقرار نیست! لطفاً شبکه را بررسی کنید.</span><span><button type="button" class="btn-check-server" onclick="checkServerConnection()">🔄 بررسی مجدد</button></span>';
+                submitBtn.disabled = true;
+                submitBtn.textContent = '⏳ بدون اتصال به سرور';
+                retryBtn.classList.remove('show');
+            }
+        }
+
+        // ================================================================
+        // 4. ذخیره در LocalStorage
+        // ================================================================
+        function getFormData() {
+            var form = document.getElementById('mainForm');
+            var formData = new FormData(form);
+            var data = {};
+            for (var pair of formData.entries()) {
+                data[pair[0]] = pair[1];
+            }
+            return data;
+        }
+
+        function saveFormDataToLocal() {
+            var data = getFormData();
+            var hasData = false;
+            for (var key in data) {
+                if (key === 'Date' || key === 'Time' || key === 'DayOfWeek') continue;
+                if (data[key] && data[key].toString().trim() !== '') {
+                    hasData = true;
+                    break;
+                }
+            }
+            
+            if (hasData) {
+                localStorage.setItem('savedFormData', JSON.stringify(data));
+                localStorage.setItem('savedFormTimestamp', new Date().toISOString());
+                savedFormData = data;
+                var savedBadge = document.getElementById('savedBadge');
+                savedBadge.classList.add('show');
+                savedBadge.textContent = '💾 ذخیره شد';
+                
+                if (isServerOnline) {
+                    var retryBtn = document.getElementById('retryBtn');
+                    retryBtn.classList.add('show');
+                    retryBtn.textContent = '📤 ارسال اطلاعات ذخیره شده';
+                    var submitBtn = document.getElementById('submitBtn');
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '⏳ از دکمه سبز استفاده کنید';
+                }
+            }
+        }
+
+        function loadSavedData() {
+            try {
+                var saved = localStorage.getItem('savedFormData');
+                if (!saved) return false;
+                
+                var data = JSON.parse(saved);
+                var form = document.getElementById('mainForm');
+                var inputs = form.querySelectorAll('input, textarea, select');
+                
+                for (var i = 0; i < inputs.length; i++) {
+                    var input = inputs[i];
+                    var name = input.name;
+                    if (name && data[name] !== undefined && data[name] !== null) {
+                        input.value = data[name];
+                        if (input.type === 'text' && !isNaN(parseNumber(data[name]))) {
+                            if (!data[name].toString().includes(',') && !isNaN(parseNumber(data[name])) && parseNumber(data[name]) > 0) {
+                                input.value = formatNumber(data[name]);
+                            }
+                        }
+                    }
+                }
+                savedFormData = data;
+                return true;
+            } catch (e) {
+                console.log('خطا در بارگذاری:', e);
+                return false;
+            }
+        }
+
+        function clearSavedData() {
+            localStorage.removeItem('savedFormData');
+            localStorage.removeItem('savedFormTimestamp');
+            savedFormData = null;
+            var savedBadge = document.getElementById('savedBadge');
+            savedBadge.classList.remove('show');
+            var retryBtn = document.getElementById('retryBtn');
+            retryBtn.classList.remove('show');
+            var submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'ثبت اطلاعات';
+        }
+
+        function hasSavedData() {
+            return localStorage.getItem('savedFormData') !== null;
+        }
+
+        // ================================================================
+        // 5. ارسال فرم
+        // ================================================================
+        function submitForm() {
+            var submitBtn = document.getElementById('submitBtn');
+            var retryBtn = document.getElementById('retryBtn');
+            
+            checkServerConnection(function(online) {
+                if (!online) {
+                    saveFormDataToLocal();
+                    var statusBar = document.getElementById('statusBar');
+                    statusBar.className = 'status-bar offline';
+                    statusBar.innerHTML = '<span><span class="status-dot red"></span> ❌ سرور در دسترس نیست! اطلاعات ذخیره شد. پس از اتصال مجدد ارسال کنید.</span><span><button type="button" class="btn-check-server" onclick="checkServerConnection()">🔄 بررسی مجدد</button></span>';
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '⏳ سرور در دسترس نیست';
+                    retryBtn.classList.add('show');
+                    retryBtn.textContent = '📤 ارسال اطلاعات ذخیره شده';
+                    alert('❌ سرور در دسترس نیست!\nاطلاعات شما در مرورگر ذخیره شد.\nپس از اتصال مجدد، دکمه سبز را بزنید.');
+                    return;
+                }
+                
+                submitBtn.disabled = true;
+                submitBtn.textContent = '⏳ در حال ارسال...';
+                
+                if (hasSavedData()) {
+                    loadSavedData();
+                }
+                
+                var form = document.getElementById('mainForm');
+                var tempForm = document.createElement('form');
+                tempForm.method = 'POST';
+                tempForm.action = '/Home/Submit';
+                
+                var formData = new FormData(form);
+                for (var pair of formData.entries()) {
+                    var input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = pair[0];
+                    input.value = pair[1];
+                    tempForm.appendChild(input);
+                }
+                
+                document.body.appendChild(tempForm);
+                
+                setTimeout(function() {
+                    tempForm.submit();
+                    clearSavedData();
+                }, 300);
+            });
+        }
+
+        function retrySubmit() {
+            checkServerConnection(function(online) {
+                if (!online) {
+                    alert('❌ سرور هنوز در دسترس نیست!\nلطفاً اتصال شبکه را بررسی کنید و دوباره تلاش کنید.');
+                    return;
+                }
+                
+                if (hasSavedData()) {
+                    loadSavedData();
+                    submitForm();
+                } else {
+                    alert('❌ اطلاعاتی برای ارسال وجود ندارد.');
+                }
+            });
+        }
+
+        // ================================================================
+        // 6. نمایش/مخفی توضیحات
+        // ================================================================
+        function toggleDescriptions() {
+            var descs = document.querySelectorAll('.field-desc');
+            var btn = document.getElementById('toggleDescBtn');
+            var isHidden = descs[0]?.classList.contains('show') === false || descs[0]?.classList.length === 0;
+            
+            descs.forEach(function(el) {
+                if (isHidden) {
+                    el.classList.add('show');
+                } else {
+                    el.classList.remove('show');
+                }
+            });
+            
+            if (isHidden) {
+                btn.textContent = '🙈 مخفی کردن توضیحات';
+                btn.classList.add('active');
+            } else {
+                btn.textContent = '📝 نمایش توضیحات فیلدها';
+                btn.classList.remove('active');
+            }
+        }
+
+        // ================================================================
+        // 7. مقداردهی اولیه
+        // ================================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            checkServerConnection(function(online) {
+                if (online && hasSavedData()) {
+                    var retryBtn = document.getElementById('retryBtn');
+                    retryBtn.classList.add('show');
+                    retryBtn.textContent = '📤 ارسال اطلاعات ذخیره شده';
+                    var submitBtn = document.getElementById('submitBtn');
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '⏳ از دکمه سبز استفاده کنید';
+                    var savedBadge = document.getElementById('savedBadge');
+                    savedBadge.classList.add('show');
+                    savedBadge.textContent = '💾 اطلاعات ذخیره شده';
+                }
+            });
+            
+            var toggleBtn = document.getElementById('toggleDescBtn');
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', toggleDescriptions);
+            }
+            
+            var form = document.getElementById('mainForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    submitForm();
+                });
+            }
+            
+            var retryBtn = document.getElementById('retryBtn');
+            if (retryBtn) {
+                retryBtn.addEventListener('click', retrySubmit);
+            }
+            
+            var moldCount = document.getElementById('MoldCount');
+            var moldWeight = document.getElementById('MoldWeight');
+            if (moldCount) {
+                moldCount.addEventListener('input', function() { calculateMoldWeight(); });
+                moldCount.addEventListener('blur', function() { formatInput(this); });
+            }
+            if (moldWeight) {
+                moldWeight.addEventListener('input', function() { calculateMoldWeight(); });
+                moldWeight.addEventListener('blur', function() { formatInput(this); });
+            }
+            
+            var materialIds = [
+                'CheeseFrozen', 'CheeseDefrost', 'Oil', 'Starch', 'Ricotta', 
+                'Phosphate', 'Water', 'Stabilizer', 'Citrate', 'Salt', 
+                'WasteReturn', 'Essence', 'CheeseGolpayegan', 'Sorbate', 
+                'PowderCode24', 'PowderCodeF', 'ColorAnnatto', 'PlasticUnderLayer',
+                'RawMaterial1', 'RawMaterial2', 'RawMaterial3',
+                'RawMaterial1Name', 'RawMaterial2Name', 'RawMaterial3Name'
+            ];
+            materialIds.forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', function() { 
+                        if (id !== 'RawMaterial1Name' && id !== 'RawMaterial2Name' && id !== 'RawMaterial3Name') {
+                            calculateTotalMaterials(); 
+                        }
+                    });
+                    el.addEventListener('blur', function() { 
+                        if (id !== 'RawMaterial1Name' && id !== 'RawMaterial2Name' && id !== 'RawMaterial3Name') {
+                            formatInput(this); 
+                        }
+                    });
+                }
+            });
+            
+            setInterval(function() {
+                saveFormDataToLocal();
+            }, 10000);
+            
+            setTimeout(function() {
+                calculateMoldWeight();
+                calculateTotalMaterials();
+            }, 100);
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- ===== هدر بالای صفحه ===== -->
+        <div class="top-header">
+            <div class="brand">
+                <span class="logo-icon">🏭</span>
+                <span class="brand-name">باربد تجارت <span>رضوان</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/Home/Index" class="active">📝 ثبت سند</a>
+                <a href="/Home/FileList">📋 لیست سندها</a>
+            </div>
+        </div>
+
+        <!-- ===== محتوای اصلی ===== -->
+        <div class="container">
+
+            <div class="header">
+                <span class="logo">📋</span>
+                <h2>گزارش تولید و پخت<br><span>باربد تجارت رضوان</span></h2>
+            </div>
+
+            @if (ViewBag.Message != null)
+            {
+                <div class="message">@ViewBag.Message</div>
+            }
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="message-error">@ViewBag.Error</div>
+            }
+
+            <!-- وضعیت اتصال به سرور -->
+            <div class="status-bar online" id="statusBar">
+                <span><span class="status-dot green"></span> در حال بررسی اتصال...</span>
+                <span><button type="button" class="btn-check-server" onclick="checkServerConnection()">🔄 بررسی</button></span>
+            </div>
+
+            <!-- نشان ذخیره شده -->
+            <div style="text-align: left; margin-bottom: 10px;">
+                <span class="saved-badge" id="savedBadge">💾 اطلاعات ذخیره شده</span>
+            </div>
+
+            <form method="post" action="/Home/Submit" id="mainForm">
+                
+                <div style="text-align: left; margin-bottom: 15px;">
+                    <button type="button" id="toggleDescBtn" class="btn-toggle-desc">📝 نمایش توضیحات فیلدها</button>
+                </div>
+
+                <!-- اطلاعات کلی -->
+                <div class="section-title">📋 اطلاعات کلی</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>تاریخ</label>
+                        <input type="text" name="Date" id="Date" value="@ViewBag.CurrentDate" readonly />
+                        <div class="field-desc">📅 تاریخ جاری به صورت خودکار ثبت می‌شود</div>
+                    </div>
+                    <div class="form-group">
+                        <label>ساعت</label>
+                        <input type="text" name="Time" id="Time" value="@ViewBag.CurrentTime" readonly />
+                        <div class="field-desc">🕐 ساعت جاری به صورت خودکار ثبت می‌شود</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>روز هفته</label>
+                    <input type="text" name="DayOfWeek" id="DayOfWeek" value="@ViewBag.CurrentDayOfWeek" readonly />
+                    <div class="field-desc">📆 روز هفته به صورت خودکار ثبت می‌شود</div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>مسئول پخت</label>
+                        <input type="text" id="ResponsibleCook" name="ResponsibleCook" value="@data.ResponsibleCook" />
+                        <div class="field-desc">👨‍🍳 نام شخص مسئول در خط پخت را وارد کنید</div>
+                    </div>
+                    <div class="form-group">
+                        <label>کارشناس فنی تولید</label>
+                        <input type="text" id="TechnicalExpert" name="TechnicalExpert" value="@data.TechnicalExpert" />
+                        <div class="field-desc">👨‍🔬 نام کارشناس فنی مسئول تولید را وارد کنید</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>نوع محصول تولید</label>
+                        <input type="text" id="ProductType" name="ProductType" value="@data.ProductType" />
+                        <div class="field-desc">🧀 نوع محصولی که در این شیفت تولید می‌شود</div>
+                    </div>
+                    <div class="form-group">
+                        <label>تعداد پرسنل حاضر</label>
+                        <input type="number" id="PersonnelCount" name="PersonnelCount" value="@data.PersonnelCount" />
+                        <div class="field-desc">👷 تعداد پرسنل حاضر در شیفت تولید</div>
+                    </div>
+                </div>
+
+                <!-- مقدار مواد اولیه -->
+                <div class="section-title">🧪 مقدار مواد اولیه (به گرم)</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>پنیر اولیه منجمد</label>
+                        <input type="text" id="CheeseFrozen" name="CheeseFrozen" value="@(data.CheeseFrozen.HasValue ? data.CheeseFrozen.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">❄️ وزن پنیر منجمد مصرفی در این شیفت به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>پنیر اولیه درفراست</label>
+                        <input type="text" id="CheeseDefrost" name="CheeseDefrost" value="@(data.CheeseDefrost.HasValue ? data.CheeseDefrost.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧊 وزن پنیر یخ‌زدایی شده مصرفی به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>روغن</label>
+                        <input type="text" id="Oil" name="Oil" value="@(data.Oil.HasValue ? data.Oil.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🫒 وزن روغن مصرفی در ترکیب به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>نشاسته</label>
+                        <input type="text" id="Starch" name="Starch" value="@(data.Starch.HasValue ? data.Starch.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🌾 وزن نشاسته مصرفی (ذرت یا گندم) به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>ریکوتا</label>
+                        <input type="text" id="Ricotta" name="Ricotta" value="@(data.Ricotta.HasValue ? data.Ricotta.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧀 وزن پنیر ریکوتا مصرفی به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>فسفات</label>
+                        <input type="text" id="Phosphate" name="Phosphate" value="@(data.Phosphate.HasValue ? data.Phosphate.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧪 وزن فسفات (سدیم یا پتاسیم) مصرفی به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>آب</label>
+                        <input type="text" id="Water" name="Water" value="@(data.Water.HasValue ? data.Water.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">💧 وزن آب مصرفی در ترکیب به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>استبلایزر</label>
+                        <input type="text" id="Stabilizer" name="Stabilizer" value="@(data.Stabilizer.HasValue ? data.Stabilizer.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧪 وزن استبلایزر (پایدارکننده) مصرفی به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>سیترات</label>
+                        <input type="text" id="Citrate" name="Citrate" value="@(data.Citrate.HasValue ? data.Citrate.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧪 وزن سیترات سدیم مصرفی به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>نمک</label>
+                        <input type="text" id="Salt" name="Salt" value="@(data.Salt.HasValue ? data.Salt.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧂 وزن نمک مصرفی در ترکیب به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>ضایعات برگشتی</label>
+                        <input type="text" id="WasteReturn" name="WasteReturn" value="@(data.WasteReturn.HasValue ? data.WasteReturn.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🔄 وزن ضایعات برگشتی به خط تولید به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>اسانس</label>
+                        <input type="text" id="Essence" name="Essence" value="@(data.Essence.HasValue ? data.Essence.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🌿 وزن اسانس (طعم‌دهنده) مصرفی به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>پنیر گلپایگان</label>
+                        <input type="text" id="CheeseGolpayegan" name="CheeseGolpayegan" value="@(data.CheeseGolpayegan.HasValue ? data.CheeseGolpayegan.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧀 وزن پنیر گلپایگان مصرفی به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>سوربات</label>
+                        <input type="text" id="Sorbate" name="Sorbate" value="@(data.Sorbate.HasValue ? data.Sorbate.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧪 وزن سوربات پتاسیم (نگهدارنده) به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>پودر کد 24 رخشان سپهر</label>
+                        <input type="text" id="PowderCode24" name="PowderCode24" value="@(data.PowderCode24.HasValue ? data.PowderCode24.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧪 وزن پودر کد 24 رخشان سپهر به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>پودر کد F</label>
+                        <input type="text" id="PowderCodeF" name="PowderCodeF" value="@(data.PowderCodeF.HasValue ? data.PowderCodeF.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🧪 وزن پودر کد F مصرفی به گرم</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>رنگ آناتو</label>
+                        <input type="text" id="ColorAnnatto" name="ColorAnnatto" value="@(data.ColorAnnatto.HasValue ? data.ColorAnnatto.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🎨 وزن رنگ آناتو (رنگ‌دهنده طبیعی) به گرم</div>
+                    </div>
+                    <div class="form-group">
+                        <label>پلاستیک لایه زیر پخت</label>
+                        <input type="text" id="PlasticUnderLayer" name="PlasticUnderLayer" value="@(data.PlasticUnderLayer.HasValue ? data.PlasticUnderLayer.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">🛡️ وزن پلاستیک لایه زیر پخت مصرفی به گرم</div>
+                    </div>
+                </div>
+
+                <!-- مواد اولیه متفرقه -->
+                <div class="section-title" style="margin-top:10px;">📦 مواد اولیه متفرقه</div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>نام کالا</label>
+                        <input type="text" id="RawMaterial1Name" name="RawMaterial1Name" value="@data.RawMaterial1Name" placeholder="نام کالا را وارد کنید" />
+                        <div class="field-desc">📝 نام ماده اولیه متفرقه 1 را وارد کنید</div>
+                    </div>
+                    <div class="form-group">
+                        <label>مقدار (گرم)</label>
+                        <input type="text" id="RawMaterial1" name="RawMaterial1" value="@(data.RawMaterial1.HasValue ? data.RawMaterial1.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">⚖️ وزن ماده اولیه متفرقه 1 به گرم</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>نام کالا</label>
+                        <input type="text" id="RawMaterial2Name" name="RawMaterial2Name" value="@data.RawMaterial2Name" placeholder="نام کالا را وارد کنید" />
+                        <div class="field-desc">📝 نام ماده اولیه متفرقه 2 را وارد کنید</div>
+                    </div>
+                    <div class="form-group">
+                        <label>مقدار (گرم)</label>
+                        <input type="text" id="RawMaterial2" name="RawMaterial2" value="@(data.RawMaterial2.HasValue ? data.RawMaterial2.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">⚖️ وزن ماده اولیه متفرقه 2 به گرم</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>نام کالا</label>
+                        <input type="text" id="RawMaterial3Name" name="RawMaterial3Name" value="@data.RawMaterial3Name" placeholder="نام کالا را وارد کنید" />
+                        <div class="field-desc">📝 نام ماده اولیه متفرقه 3 را وارد کنید</div>
+                    </div>
+                    <div class="form-group">
+                        <label>مقدار (گرم)</label>
+                        <input type="text" id="RawMaterial3" name="RawMaterial3" value="@(data.RawMaterial3.HasValue ? data.RawMaterial3.Value.ToString("N0") : "")" placeholder="مقدار به گرم" />
+                        <div class="field-desc">⚖️ وزن ماده اولیه متفرقه 3 به گرم</div>
+                    </div>
+                </div>
+
+                <!-- اطلاعات قالب‌ها -->
+                <div class="section-title">📊 اطلاعات قالب‌ها</div>
+                
+                <div class="form-row-3">
+                    <div class="form-group">
+                        <label>تعداد قالب‌ها</label>
+                        <input type="text" id="MoldCount" name="MoldCount" value="@(data.MoldCount.HasValue ? data.MoldCount.Value.ToString("N0") : "")" placeholder="تعداد قالب‌ها" />
+                        <div class="field-desc">🔢 تعداد کل قالب‌های استفاده شده در این شیفت</div>
+                    </div>
+                    <div class="form-group">
+                        <label>وزن هر قالب (گرم)</label>
+                        <input type="text" id="MoldWeight" name="MoldWeight" value="@(data.MoldWeight.HasValue ? data.MoldWeight.Value.ToString("N0") : "")" placeholder="وزن هر قالب" />
+                        <div class="field-desc">⚖️ وزن هر قالب به گرم (میانگین)</div>
+                    </div>
+                    <div class="form-group">
+                        <label>وزن کل قالب‌ها (گرم)</label>
+                        <input type="text" id="TotalMoldWeight" name="TotalMoldWeight" value="@(data.TotalMoldWeight.HasValue ? data.TotalMoldWeight.Value.ToString("N0") : "")" readonly class="auto-calc" />
+                        <div class="field-desc">📊 وزن کل قالب‌ها = تعداد × وزن هر قالب (خودکار)</div>
+                    </div>
+                </div>
+
+                <!-- اطلاعات وزن‌ها -->
+                <div class="section-title">⚖️ اطلاعات وزن‌ها</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>جمع وزن مواد ورودی (گرم)</label>
+                        <input type="text" id="TotalInputWeight" name="TotalInputWeight" value="@(data.TotalInputWeight.HasValue ? data.TotalInputWeight.Value.ToString("N0") : "")" readonly class="auto-calc" />
+                        <div class="field-desc">📊 جمع وزن تمام مواد اولیه (بدون وزن قالب‌ها) - خودکار</div>
+                    </div>
+                    <div class="form-group">
+                        <label>وزن واقعی کالای تولیدی (گرم)</label>
+                        <input type="text" id="ActualProductWeight" name="ActualProductWeight" value="@(data.ActualProductWeight.HasValue ? data.ActualProductWeight.Value.ToString("N0") : "")" placeholder="وزن واقعی به گرم" />
+                        <div class="field-desc">⚖️ وزن نهایی محصول تولید شده بعد از پخت به گرم</div>
+                    </div>
+                </div>
+
+                <!-- توضیحات نهایی -->
+                <div class="section-title">📝 توضیحات نهایی</div>
+                
+                <div class="form-group">
+                    <label>توضیحات تولید</label>
+                    <textarea id="ProductionDescription" name="ProductionDescription">@data.ProductionDescription</textarea>
+                    <div class="field-desc">📝 توضیحات کلی درباره فرآیند تولید این شیفت</div>
+                </div>
+                
+                <div class="form-group">
+                    <label>توضیحات مسئول پخت</label>
+                    <textarea id="CookDescription" name="CookDescription">@data.CookDescription</textarea>
+                    <div class="field-desc">👨‍🍳 توضیحات تکمیلی از سوی مسئول پخت</div>
+                </div>
+                
+                <div class="form-group">
+                    <label>توضیحات کارشناس فنی تولید</label>
+                    <textarea id="ExpertDescription" name="ExpertDescription">@data.ExpertDescription</textarea>
+                    <div class="field-desc">👨‍🔬 توضیحات تکمیلی از سوی کارشناس فنی تولید</div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn-submit">ثبت اطلاعات</button>
+                <button type="button" id="retryBtn" class="btn-retry">📤 ارسال اطلاعات ذخیره شده</button>
+            </form>
+        </div>
+
+        <!-- ===== فوتر ===== -->
+        <div class="footer">
+                <div class="powered">
+                    <span class="glass-icon">🔮</span> قدرت گرفته از <strong>اتاق شیشه‌ای بیاریکا</strong>
+            </div>
+            <div class="support">
+                📞 پشتیبانی: <a href="tel:09359679647">09359679647</a>
+            </div>
+            <div style="margin-top:5px; font-size:11px; color:#aaa;">
+                نسخه 1.0
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

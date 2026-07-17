@@ -1,0 +1,1889 @@
+Folder PATH listing
+Volume serial number is 607E-0206
+C:.
+?   appsettings.Development.json
+?   appsettings.json
+?   MyExcelApp.csproj
+?   Program.cs
+?   structure.txt
+?   
+????bin
+?   ????Debug
+?   ?   ????net10.0
+?   ?       ?   appsettings.Development.json
+?   ?       ?   appsettings.json
+?   ?       ?   EPPlus.dll
+?   ?       ?   EPPlus.Interfaces.dll
+?   ?       ?   EPPlus.System.Drawing.dll
+?   ?       ?   Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+?   ?       ?   Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+?   ?       ?   Microsoft.AspNetCore.Razor.Language.dll
+?   ?       ?   Microsoft.CodeAnalysis.CSharp.dll
+?   ?       ?   Microsoft.CodeAnalysis.dll
+?   ?       ?   Microsoft.CodeAnalysis.Razor.dll
+?   ?       ?   Microsoft.Extensions.DependencyModel.dll
+?   ?       ?   Microsoft.IO.RecyclableMemoryStream.dll
+?   ?       ?   Microsoft.Win32.SystemEvents.dll
+?   ?       ?   MyExcelApp.deps.json
+?   ?       ?   MyExcelApp.dll
+?   ?       ?   MyExcelApp.exe
+?   ?       ?   MyExcelApp.pdb
+?   ?       ?   MyExcelApp.runtimeconfig.json
+?   ?       ?   MyExcelApp.staticwebassets.endpoints.json
+?   ?       ?   MyExcelApp.staticwebassets.runtime.json
+?   ?       ?   System.Drawing.Common.dll
+?   ?       ?   
+?   ?       ????cs
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????de
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????es
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????fr
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????it
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????ja
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????ko
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????pl
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????pt-BR
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????publish
+?   ?       ?       appsettings.Development.json
+?   ?       ?       appsettings.json
+?   ?       ?       MyExcelApp.deps.json
+?   ?       ?       MyExcelApp.runtimeconfig.json
+?   ?       ?       MyExcelApp.staticwebassets.endpoints.json
+?   ?       ?       web.config
+?   ?       ?       
+?   ?       ????refs
+?   ?       ?       Microsoft.AspNetCore.Antiforgery.dll
+?   ?       ?       Microsoft.AspNetCore.Authentication.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Authentication.BearerToken.dll
+?   ?       ?       Microsoft.AspNetCore.Authentication.Cookies.dll
+?   ?       ?       Microsoft.AspNetCore.Authentication.Core.dll
+?   ?       ?       Microsoft.AspNetCore.Authentication.dll
+?   ?       ?       Microsoft.AspNetCore.Authentication.OAuth.dll
+?   ?       ?       Microsoft.AspNetCore.Authorization.dll
+?   ?       ?       Microsoft.AspNetCore.Authorization.Policy.dll
+?   ?       ?       Microsoft.AspNetCore.Components.Authorization.dll
+?   ?       ?       Microsoft.AspNetCore.Components.dll
+?   ?       ?       Microsoft.AspNetCore.Components.Endpoints.dll
+?   ?       ?       Microsoft.AspNetCore.Components.Forms.dll
+?   ?       ?       Microsoft.AspNetCore.Components.Server.dll
+?   ?       ?       Microsoft.AspNetCore.Components.Web.dll
+?   ?       ?       Microsoft.AspNetCore.Connections.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.CookiePolicy.dll
+?   ?       ?       Microsoft.AspNetCore.Cors.dll
+?   ?       ?       Microsoft.AspNetCore.Cryptography.Internal.dll
+?   ?       ?       Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+?   ?       ?       Microsoft.AspNetCore.DataProtection.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.DataProtection.dll
+?   ?       ?       Microsoft.AspNetCore.DataProtection.Extensions.dll
+?   ?       ?       Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Diagnostics.dll
+?   ?       ?       Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+?   ?       ?       Microsoft.AspNetCore.dll
+?   ?       ?       Microsoft.AspNetCore.HostFiltering.dll
+?   ?       ?       Microsoft.AspNetCore.Hosting.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Hosting.dll
+?   ?       ?       Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Html.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Http.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Http.Connections.Common.dll
+?   ?       ?       Microsoft.AspNetCore.Http.Connections.dll
+?   ?       ?       Microsoft.AspNetCore.Http.dll
+?   ?       ?       Microsoft.AspNetCore.Http.Extensions.dll
+?   ?       ?       Microsoft.AspNetCore.Http.Features.dll
+?   ?       ?       Microsoft.AspNetCore.Http.Results.dll
+?   ?       ?       Microsoft.AspNetCore.HttpLogging.dll
+?   ?       ?       Microsoft.AspNetCore.HttpOverrides.dll
+?   ?       ?       Microsoft.AspNetCore.HttpsPolicy.dll
+?   ?       ?       Microsoft.AspNetCore.Identity.dll
+?   ?       ?       Microsoft.AspNetCore.Localization.dll
+?   ?       ?       Microsoft.AspNetCore.Localization.Routing.dll
+?   ?       ?       Microsoft.AspNetCore.Metadata.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Core.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Cors.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Localization.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.Razor.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.RazorPages.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.TagHelpers.dll
+?   ?       ?       Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+?   ?       ?       Microsoft.AspNetCore.OutputCaching.dll
+?   ?       ?       Microsoft.AspNetCore.RateLimiting.dll
+?   ?       ?       Microsoft.AspNetCore.Razor.dll
+?   ?       ?       Microsoft.AspNetCore.Razor.Runtime.dll
+?   ?       ?       Microsoft.AspNetCore.RequestDecompression.dll
+?   ?       ?       Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.ResponseCaching.dll
+?   ?       ?       Microsoft.AspNetCore.ResponseCompression.dll
+?   ?       ?       Microsoft.AspNetCore.Rewrite.dll
+?   ?       ?       Microsoft.AspNetCore.Routing.Abstractions.dll
+?   ?       ?       Microsoft.AspNetCore.Routing.dll
+?   ?       ?       Microsoft.AspNetCore.Server.HttpSys.dll
+?   ?       ?       Microsoft.AspNetCore.Server.IIS.dll
+?   ?       ?       Microsoft.AspNetCore.Server.IISIntegration.dll
+?   ?       ?       Microsoft.AspNetCore.Server.Kestrel.Core.dll
+?   ?       ?       Microsoft.AspNetCore.Server.Kestrel.dll
+?   ?       ?       Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+?   ?       ?       Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+?   ?       ?       Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+?   ?       ?       Microsoft.AspNetCore.Session.dll
+?   ?       ?       Microsoft.AspNetCore.SignalR.Common.dll
+?   ?       ?       Microsoft.AspNetCore.SignalR.Core.dll
+?   ?       ?       Microsoft.AspNetCore.SignalR.dll
+?   ?       ?       Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+?   ?       ?       Microsoft.AspNetCore.StaticAssets.dll
+?   ?       ?       Microsoft.AspNetCore.StaticFiles.dll
+?   ?       ?       Microsoft.AspNetCore.WebSockets.dll
+?   ?       ?       Microsoft.AspNetCore.WebUtilities.dll
+?   ?       ?       Microsoft.CSharp.dll
+?   ?       ?       Microsoft.Extensions.Caching.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Caching.Memory.dll
+?   ?       ?       Microsoft.Extensions.Configuration.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Configuration.Binder.dll
+?   ?       ?       Microsoft.Extensions.Configuration.CommandLine.dll
+?   ?       ?       Microsoft.Extensions.Configuration.dll
+?   ?       ?       Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+?   ?       ?       Microsoft.Extensions.Configuration.FileExtensions.dll
+?   ?       ?       Microsoft.Extensions.Configuration.Ini.dll
+?   ?       ?       Microsoft.Extensions.Configuration.Json.dll
+?   ?       ?       Microsoft.Extensions.Configuration.KeyPerFile.dll
+?   ?       ?       Microsoft.Extensions.Configuration.UserSecrets.dll
+?   ?       ?       Microsoft.Extensions.Configuration.Xml.dll
+?   ?       ?       Microsoft.Extensions.DependencyInjection.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.DependencyInjection.dll
+?   ?       ?       Microsoft.Extensions.Diagnostics.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Diagnostics.dll
+?   ?       ?       Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Diagnostics.HealthChecks.dll
+?   ?       ?       Microsoft.Extensions.Features.dll
+?   ?       ?       Microsoft.Extensions.FileProviders.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.FileProviders.Composite.dll
+?   ?       ?       Microsoft.Extensions.FileProviders.Embedded.dll
+?   ?       ?       Microsoft.Extensions.FileProviders.Physical.dll
+?   ?       ?       Microsoft.Extensions.FileSystemGlobbing.dll
+?   ?       ?       Microsoft.Extensions.Hosting.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Hosting.dll
+?   ?       ?       Microsoft.Extensions.Http.dll
+?   ?       ?       Microsoft.Extensions.Identity.Core.dll
+?   ?       ?       Microsoft.Extensions.Identity.Stores.dll
+?   ?       ?       Microsoft.Extensions.Localization.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Localization.dll
+?   ?       ?       Microsoft.Extensions.Logging.Abstractions.dll
+?   ?       ?       Microsoft.Extensions.Logging.Configuration.dll
+?   ?       ?       Microsoft.Extensions.Logging.Console.dll
+?   ?       ?       Microsoft.Extensions.Logging.Debug.dll
+?   ?       ?       Microsoft.Extensions.Logging.dll
+?   ?       ?       Microsoft.Extensions.Logging.EventLog.dll
+?   ?       ?       Microsoft.Extensions.Logging.EventSource.dll
+?   ?       ?       Microsoft.Extensions.Logging.TraceSource.dll
+?   ?       ?       Microsoft.Extensions.ObjectPool.dll
+?   ?       ?       Microsoft.Extensions.Options.ConfigurationExtensions.dll
+?   ?       ?       Microsoft.Extensions.Options.DataAnnotations.dll
+?   ?       ?       Microsoft.Extensions.Options.dll
+?   ?       ?       Microsoft.Extensions.Primitives.dll
+?   ?       ?       Microsoft.Extensions.Validation.dll
+?   ?       ?       Microsoft.Extensions.WebEncoders.dll
+?   ?       ?       Microsoft.JSInterop.dll
+?   ?       ?       Microsoft.Net.Http.Headers.dll
+?   ?       ?       Microsoft.VisualBasic.Core.dll
+?   ?       ?       Microsoft.VisualBasic.dll
+?   ?       ?       Microsoft.Win32.Primitives.dll
+?   ?       ?       Microsoft.Win32.Registry.dll
+?   ?       ?       mscorlib.dll
+?   ?       ?       netstandard.dll
+?   ?       ?       System.AppContext.dll
+?   ?       ?       System.Buffers.dll
+?   ?       ?       System.Collections.Concurrent.dll
+?   ?       ?       System.Collections.dll
+?   ?       ?       System.Collections.Immutable.dll
+?   ?       ?       System.Collections.NonGeneric.dll
+?   ?       ?       System.Collections.Specialized.dll
+?   ?       ?       System.ComponentModel.Annotations.dll
+?   ?       ?       System.ComponentModel.DataAnnotations.dll
+?   ?       ?       System.ComponentModel.dll
+?   ?       ?       System.ComponentModel.EventBasedAsync.dll
+?   ?       ?       System.ComponentModel.Primitives.dll
+?   ?       ?       System.ComponentModel.TypeConverter.dll
+?   ?       ?       System.Configuration.dll
+?   ?       ?       System.Console.dll
+?   ?       ?       System.Core.dll
+?   ?       ?       System.Data.Common.dll
+?   ?       ?       System.Data.DataSetExtensions.dll
+?   ?       ?       System.Data.dll
+?   ?       ?       System.Diagnostics.Contracts.dll
+?   ?       ?       System.Diagnostics.Debug.dll
+?   ?       ?       System.Diagnostics.DiagnosticSource.dll
+?   ?       ?       System.Diagnostics.EventLog.dll
+?   ?       ?       System.Diagnostics.FileVersionInfo.dll
+?   ?       ?       System.Diagnostics.Process.dll
+?   ?       ?       System.Diagnostics.StackTrace.dll
+?   ?       ?       System.Diagnostics.TextWriterTraceListener.dll
+?   ?       ?       System.Diagnostics.Tools.dll
+?   ?       ?       System.Diagnostics.TraceSource.dll
+?   ?       ?       System.Diagnostics.Tracing.dll
+?   ?       ?       System.dll
+?   ?       ?       System.Drawing.dll
+?   ?       ?       System.Drawing.Primitives.dll
+?   ?       ?       System.Dynamic.Runtime.dll
+?   ?       ?       System.Formats.Asn1.dll
+?   ?       ?       System.Formats.Cbor.dll
+?   ?       ?       System.Formats.Tar.dll
+?   ?       ?       System.Globalization.Calendars.dll
+?   ?       ?       System.Globalization.dll
+?   ?       ?       System.Globalization.Extensions.dll
+?   ?       ?       System.IO.Compression.Brotli.dll
+?   ?       ?       System.IO.Compression.dll
+?   ?       ?       System.IO.Compression.FileSystem.dll
+?   ?       ?       System.IO.Compression.ZipFile.dll
+?   ?       ?       System.IO.dll
+?   ?       ?       System.IO.FileSystem.AccessControl.dll
+?   ?       ?       System.IO.FileSystem.dll
+?   ?       ?       System.IO.FileSystem.DriveInfo.dll
+?   ?       ?       System.IO.FileSystem.Primitives.dll
+?   ?       ?       System.IO.FileSystem.Watcher.dll
+?   ?       ?       System.IO.IsolatedStorage.dll
+?   ?       ?       System.IO.MemoryMappedFiles.dll
+?   ?       ?       System.IO.Pipelines.dll
+?   ?       ?       System.IO.Pipes.AccessControl.dll
+?   ?       ?       System.IO.Pipes.dll
+?   ?       ?       System.IO.UnmanagedMemoryStream.dll
+?   ?       ?       System.Linq.AsyncEnumerable.dll
+?   ?       ?       System.Linq.dll
+?   ?       ?       System.Linq.Expressions.dll
+?   ?       ?       System.Linq.Parallel.dll
+?   ?       ?       System.Linq.Queryable.dll
+?   ?       ?       System.Memory.dll
+?   ?       ?       System.Net.dll
+?   ?       ?       System.Net.Http.dll
+?   ?       ?       System.Net.Http.Json.dll
+?   ?       ?       System.Net.HttpListener.dll
+?   ?       ?       System.Net.Mail.dll
+?   ?       ?       System.Net.NameResolution.dll
+?   ?       ?       System.Net.NetworkInformation.dll
+?   ?       ?       System.Net.Ping.dll
+?   ?       ?       System.Net.Primitives.dll
+?   ?       ?       System.Net.Quic.dll
+?   ?       ?       System.Net.Requests.dll
+?   ?       ?       System.Net.Security.dll
+?   ?       ?       System.Net.ServerSentEvents.dll
+?   ?       ?       System.Net.ServicePoint.dll
+?   ?       ?       System.Net.Sockets.dll
+?   ?       ?       System.Net.WebClient.dll
+?   ?       ?       System.Net.WebHeaderCollection.dll
+?   ?       ?       System.Net.WebProxy.dll
+?   ?       ?       System.Net.WebSockets.Client.dll
+?   ?       ?       System.Net.WebSockets.dll
+?   ?       ?       System.Numerics.dll
+?   ?       ?       System.Numerics.Vectors.dll
+?   ?       ?       System.ObjectModel.dll
+?   ?       ?       System.Reflection.DispatchProxy.dll
+?   ?       ?       System.Reflection.dll
+?   ?       ?       System.Reflection.Emit.dll
+?   ?       ?       System.Reflection.Emit.ILGeneration.dll
+?   ?       ?       System.Reflection.Emit.Lightweight.dll
+?   ?       ?       System.Reflection.Extensions.dll
+?   ?       ?       System.Reflection.Metadata.dll
+?   ?       ?       System.Reflection.Primitives.dll
+?   ?       ?       System.Reflection.TypeExtensions.dll
+?   ?       ?       System.Resources.Reader.dll
+?   ?       ?       System.Resources.ResourceManager.dll
+?   ?       ?       System.Resources.Writer.dll
+?   ?       ?       System.Runtime.CompilerServices.Unsafe.dll
+?   ?       ?       System.Runtime.CompilerServices.VisualC.dll
+?   ?       ?       System.Runtime.dll
+?   ?       ?       System.Runtime.Extensions.dll
+?   ?       ?       System.Runtime.Handles.dll
+?   ?       ?       System.Runtime.InteropServices.dll
+?   ?       ?       System.Runtime.InteropServices.JavaScript.dll
+?   ?       ?       System.Runtime.InteropServices.RuntimeInformation.dll
+?   ?       ?       System.Runtime.Intrinsics.dll
+?   ?       ?       System.Runtime.Loader.dll
+?   ?       ?       System.Runtime.Numerics.dll
+?   ?       ?       System.Runtime.Serialization.dll
+?   ?       ?       System.Runtime.Serialization.Formatters.dll
+?   ?       ?       System.Runtime.Serialization.Json.dll
+?   ?       ?       System.Runtime.Serialization.Primitives.dll
+?   ?       ?       System.Runtime.Serialization.Xml.dll
+?   ?       ?       System.Security.AccessControl.dll
+?   ?       ?       System.Security.Claims.dll
+?   ?       ?       System.Security.Cryptography.Algorithms.dll
+?   ?       ?       System.Security.Cryptography.Cng.dll
+?   ?       ?       System.Security.Cryptography.Csp.dll
+?   ?       ?       System.Security.Cryptography.dll
+?   ?       ?       System.Security.Cryptography.Encoding.dll
+?   ?       ?       System.Security.Cryptography.OpenSsl.dll
+?   ?       ?       System.Security.Cryptography.Primitives.dll
+?   ?       ?       System.Security.Cryptography.X509Certificates.dll
+?   ?       ?       System.Security.Cryptography.Xml.dll
+?   ?       ?       System.Security.dll
+?   ?       ?       System.Security.Principal.dll
+?   ?       ?       System.Security.Principal.Windows.dll
+?   ?       ?       System.Security.SecureString.dll
+?   ?       ?       System.ServiceModel.Web.dll
+?   ?       ?       System.ServiceProcess.dll
+?   ?       ?       System.Text.Encoding.CodePages.dll
+?   ?       ?       System.Text.Encoding.dll
+?   ?       ?       System.Text.Encoding.Extensions.dll
+?   ?       ?       System.Text.Encodings.Web.dll
+?   ?       ?       System.Text.Json.dll
+?   ?       ?       System.Text.RegularExpressions.dll
+?   ?       ?       System.Threading.AccessControl.dll
+?   ?       ?       System.Threading.Channels.dll
+?   ?       ?       System.Threading.dll
+?   ?       ?       System.Threading.Overlapped.dll
+?   ?       ?       System.Threading.RateLimiting.dll
+?   ?       ?       System.Threading.Tasks.Dataflow.dll
+?   ?       ?       System.Threading.Tasks.dll
+?   ?       ?       System.Threading.Tasks.Extensions.dll
+?   ?       ?       System.Threading.Tasks.Parallel.dll
+?   ?       ?       System.Threading.Thread.dll
+?   ?       ?       System.Threading.ThreadPool.dll
+?   ?       ?       System.Threading.Timer.dll
+?   ?       ?       System.Transactions.dll
+?   ?       ?       System.Transactions.Local.dll
+?   ?       ?       System.ValueTuple.dll
+?   ?       ?       System.Web.dll
+?   ?       ?       System.Web.HttpUtility.dll
+?   ?       ?       System.Windows.dll
+?   ?       ?       System.Xml.dll
+?   ?       ?       System.Xml.Linq.dll
+?   ?       ?       System.Xml.ReaderWriter.dll
+?   ?       ?       System.Xml.Serialization.dll
+?   ?       ?       System.Xml.XDocument.dll
+?   ?       ?       System.Xml.XmlDocument.dll
+?   ?       ?       System.Xml.XmlSerializer.dll
+?   ?       ?       System.Xml.XPath.dll
+?   ?       ?       System.Xml.XPath.XDocument.dll
+?   ?       ?       WindowsBase.dll
+?   ?       ?       
+?   ?       ????ru
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????runtimes
+?   ?       ?   ????win
+?   ?       ?       ????lib
+?   ?       ?           ????net7.0
+?   ?       ?                   Microsoft.Win32.SystemEvents.dll
+?   ?       ?                   System.Drawing.Common.dll
+?   ?       ?                   
+?   ?       ????tr
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????zh-Hans
+?   ?       ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       ?       
+?   ?       ????zh-Hant
+?   ?               Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?               Microsoft.CodeAnalysis.resources.dll
+?   ?               
+?   ????Release
+?       ????net10.0
+?           ?   appsettings.Development.json
+?           ?   appsettings.json
+?           ?   EPPlus.dll
+?           ?   EPPlus.Interfaces.dll
+?           ?   EPPlus.System.Drawing.dll
+?           ?   Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+?           ?   Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+?           ?   Microsoft.AspNetCore.Razor.Language.dll
+?           ?   Microsoft.CodeAnalysis.CSharp.dll
+?           ?   Microsoft.CodeAnalysis.dll
+?           ?   Microsoft.CodeAnalysis.Razor.dll
+?           ?   Microsoft.Extensions.DependencyModel.dll
+?           ?   Microsoft.IO.RecyclableMemoryStream.dll
+?           ?   Microsoft.Win32.SystemEvents.dll
+?           ?   MyExcelApp.deps.json
+?           ?   MyExcelApp.dll
+?           ?   MyExcelApp.exe
+?           ?   MyExcelApp.pdb
+?           ?   MyExcelApp.runtimeconfig.json
+?           ?   MyExcelApp.staticwebassets.endpoints.json
+?           ?   MyExcelApp.staticwebassets.runtime.json
+?           ?   System.Drawing.Common.dll
+?           ?   
+?           ????cs
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????de
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????es
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????fr
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????it
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????ja
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????ko
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????pl
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????pt-BR
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????refs
+?           ?       Microsoft.AspNetCore.Antiforgery.dll
+?           ?       Microsoft.AspNetCore.Authentication.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Authentication.BearerToken.dll
+?           ?       Microsoft.AspNetCore.Authentication.Cookies.dll
+?           ?       Microsoft.AspNetCore.Authentication.Core.dll
+?           ?       Microsoft.AspNetCore.Authentication.dll
+?           ?       Microsoft.AspNetCore.Authentication.OAuth.dll
+?           ?       Microsoft.AspNetCore.Authorization.dll
+?           ?       Microsoft.AspNetCore.Authorization.Policy.dll
+?           ?       Microsoft.AspNetCore.Components.Authorization.dll
+?           ?       Microsoft.AspNetCore.Components.dll
+?           ?       Microsoft.AspNetCore.Components.Endpoints.dll
+?           ?       Microsoft.AspNetCore.Components.Forms.dll
+?           ?       Microsoft.AspNetCore.Components.Server.dll
+?           ?       Microsoft.AspNetCore.Components.Web.dll
+?           ?       Microsoft.AspNetCore.Connections.Abstractions.dll
+?           ?       Microsoft.AspNetCore.CookiePolicy.dll
+?           ?       Microsoft.AspNetCore.Cors.dll
+?           ?       Microsoft.AspNetCore.Cryptography.Internal.dll
+?           ?       Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+?           ?       Microsoft.AspNetCore.DataProtection.Abstractions.dll
+?           ?       Microsoft.AspNetCore.DataProtection.dll
+?           ?       Microsoft.AspNetCore.DataProtection.Extensions.dll
+?           ?       Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Diagnostics.dll
+?           ?       Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+?           ?       Microsoft.AspNetCore.dll
+?           ?       Microsoft.AspNetCore.HostFiltering.dll
+?           ?       Microsoft.AspNetCore.Hosting.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Hosting.dll
+?           ?       Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Html.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Http.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Http.Connections.Common.dll
+?           ?       Microsoft.AspNetCore.Http.Connections.dll
+?           ?       Microsoft.AspNetCore.Http.dll
+?           ?       Microsoft.AspNetCore.Http.Extensions.dll
+?           ?       Microsoft.AspNetCore.Http.Features.dll
+?           ?       Microsoft.AspNetCore.Http.Results.dll
+?           ?       Microsoft.AspNetCore.HttpLogging.dll
+?           ?       Microsoft.AspNetCore.HttpOverrides.dll
+?           ?       Microsoft.AspNetCore.HttpsPolicy.dll
+?           ?       Microsoft.AspNetCore.Identity.dll
+?           ?       Microsoft.AspNetCore.Localization.dll
+?           ?       Microsoft.AspNetCore.Localization.Routing.dll
+?           ?       Microsoft.AspNetCore.Metadata.dll
+?           ?       Microsoft.AspNetCore.Mvc.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+?           ?       Microsoft.AspNetCore.Mvc.Core.dll
+?           ?       Microsoft.AspNetCore.Mvc.Cors.dll
+?           ?       Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+?           ?       Microsoft.AspNetCore.Mvc.dll
+?           ?       Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+?           ?       Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+?           ?       Microsoft.AspNetCore.Mvc.Localization.dll
+?           ?       Microsoft.AspNetCore.Mvc.Razor.dll
+?           ?       Microsoft.AspNetCore.Mvc.RazorPages.dll
+?           ?       Microsoft.AspNetCore.Mvc.TagHelpers.dll
+?           ?       Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+?           ?       Microsoft.AspNetCore.OutputCaching.dll
+?           ?       Microsoft.AspNetCore.RateLimiting.dll
+?           ?       Microsoft.AspNetCore.Razor.dll
+?           ?       Microsoft.AspNetCore.Razor.Runtime.dll
+?           ?       Microsoft.AspNetCore.RequestDecompression.dll
+?           ?       Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+?           ?       Microsoft.AspNetCore.ResponseCaching.dll
+?           ?       Microsoft.AspNetCore.ResponseCompression.dll
+?           ?       Microsoft.AspNetCore.Rewrite.dll
+?           ?       Microsoft.AspNetCore.Routing.Abstractions.dll
+?           ?       Microsoft.AspNetCore.Routing.dll
+?           ?       Microsoft.AspNetCore.Server.HttpSys.dll
+?           ?       Microsoft.AspNetCore.Server.IIS.dll
+?           ?       Microsoft.AspNetCore.Server.IISIntegration.dll
+?           ?       Microsoft.AspNetCore.Server.Kestrel.Core.dll
+?           ?       Microsoft.AspNetCore.Server.Kestrel.dll
+?           ?       Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+?           ?       Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+?           ?       Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+?           ?       Microsoft.AspNetCore.Session.dll
+?           ?       Microsoft.AspNetCore.SignalR.Common.dll
+?           ?       Microsoft.AspNetCore.SignalR.Core.dll
+?           ?       Microsoft.AspNetCore.SignalR.dll
+?           ?       Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+?           ?       Microsoft.AspNetCore.StaticAssets.dll
+?           ?       Microsoft.AspNetCore.StaticFiles.dll
+?           ?       Microsoft.AspNetCore.WebSockets.dll
+?           ?       Microsoft.AspNetCore.WebUtilities.dll
+?           ?       Microsoft.CSharp.dll
+?           ?       Microsoft.Extensions.Caching.Abstractions.dll
+?           ?       Microsoft.Extensions.Caching.Memory.dll
+?           ?       Microsoft.Extensions.Configuration.Abstractions.dll
+?           ?       Microsoft.Extensions.Configuration.Binder.dll
+?           ?       Microsoft.Extensions.Configuration.CommandLine.dll
+?           ?       Microsoft.Extensions.Configuration.dll
+?           ?       Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+?           ?       Microsoft.Extensions.Configuration.FileExtensions.dll
+?           ?       Microsoft.Extensions.Configuration.Ini.dll
+?           ?       Microsoft.Extensions.Configuration.Json.dll
+?           ?       Microsoft.Extensions.Configuration.KeyPerFile.dll
+?           ?       Microsoft.Extensions.Configuration.UserSecrets.dll
+?           ?       Microsoft.Extensions.Configuration.Xml.dll
+?           ?       Microsoft.Extensions.DependencyInjection.Abstractions.dll
+?           ?       Microsoft.Extensions.DependencyInjection.dll
+?           ?       Microsoft.Extensions.Diagnostics.Abstractions.dll
+?           ?       Microsoft.Extensions.Diagnostics.dll
+?           ?       Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+?           ?       Microsoft.Extensions.Diagnostics.HealthChecks.dll
+?           ?       Microsoft.Extensions.Features.dll
+?           ?       Microsoft.Extensions.FileProviders.Abstractions.dll
+?           ?       Microsoft.Extensions.FileProviders.Composite.dll
+?           ?       Microsoft.Extensions.FileProviders.Embedded.dll
+?           ?       Microsoft.Extensions.FileProviders.Physical.dll
+?           ?       Microsoft.Extensions.FileSystemGlobbing.dll
+?           ?       Microsoft.Extensions.Hosting.Abstractions.dll
+?           ?       Microsoft.Extensions.Hosting.dll
+?           ?       Microsoft.Extensions.Http.dll
+?           ?       Microsoft.Extensions.Identity.Core.dll
+?           ?       Microsoft.Extensions.Identity.Stores.dll
+?           ?       Microsoft.Extensions.Localization.Abstractions.dll
+?           ?       Microsoft.Extensions.Localization.dll
+?           ?       Microsoft.Extensions.Logging.Abstractions.dll
+?           ?       Microsoft.Extensions.Logging.Configuration.dll
+?           ?       Microsoft.Extensions.Logging.Console.dll
+?           ?       Microsoft.Extensions.Logging.Debug.dll
+?           ?       Microsoft.Extensions.Logging.dll
+?           ?       Microsoft.Extensions.Logging.EventLog.dll
+?           ?       Microsoft.Extensions.Logging.EventSource.dll
+?           ?       Microsoft.Extensions.Logging.TraceSource.dll
+?           ?       Microsoft.Extensions.ObjectPool.dll
+?           ?       Microsoft.Extensions.Options.ConfigurationExtensions.dll
+?           ?       Microsoft.Extensions.Options.DataAnnotations.dll
+?           ?       Microsoft.Extensions.Options.dll
+?           ?       Microsoft.Extensions.Primitives.dll
+?           ?       Microsoft.Extensions.Validation.dll
+?           ?       Microsoft.Extensions.WebEncoders.dll
+?           ?       Microsoft.JSInterop.dll
+?           ?       Microsoft.Net.Http.Headers.dll
+?           ?       Microsoft.VisualBasic.Core.dll
+?           ?       Microsoft.VisualBasic.dll
+?           ?       Microsoft.Win32.Primitives.dll
+?           ?       Microsoft.Win32.Registry.dll
+?           ?       mscorlib.dll
+?           ?       netstandard.dll
+?           ?       System.AppContext.dll
+?           ?       System.Buffers.dll
+?           ?       System.Collections.Concurrent.dll
+?           ?       System.Collections.dll
+?           ?       System.Collections.Immutable.dll
+?           ?       System.Collections.NonGeneric.dll
+?           ?       System.Collections.Specialized.dll
+?           ?       System.ComponentModel.Annotations.dll
+?           ?       System.ComponentModel.DataAnnotations.dll
+?           ?       System.ComponentModel.dll
+?           ?       System.ComponentModel.EventBasedAsync.dll
+?           ?       System.ComponentModel.Primitives.dll
+?           ?       System.ComponentModel.TypeConverter.dll
+?           ?       System.Configuration.dll
+?           ?       System.Console.dll
+?           ?       System.Core.dll
+?           ?       System.Data.Common.dll
+?           ?       System.Data.DataSetExtensions.dll
+?           ?       System.Data.dll
+?           ?       System.Diagnostics.Contracts.dll
+?           ?       System.Diagnostics.Debug.dll
+?           ?       System.Diagnostics.DiagnosticSource.dll
+?           ?       System.Diagnostics.EventLog.dll
+?           ?       System.Diagnostics.FileVersionInfo.dll
+?           ?       System.Diagnostics.Process.dll
+?           ?       System.Diagnostics.StackTrace.dll
+?           ?       System.Diagnostics.TextWriterTraceListener.dll
+?           ?       System.Diagnostics.Tools.dll
+?           ?       System.Diagnostics.TraceSource.dll
+?           ?       System.Diagnostics.Tracing.dll
+?           ?       System.dll
+?           ?       System.Drawing.dll
+?           ?       System.Drawing.Primitives.dll
+?           ?       System.Dynamic.Runtime.dll
+?           ?       System.Formats.Asn1.dll
+?           ?       System.Formats.Cbor.dll
+?           ?       System.Formats.Tar.dll
+?           ?       System.Globalization.Calendars.dll
+?           ?       System.Globalization.dll
+?           ?       System.Globalization.Extensions.dll
+?           ?       System.IO.Compression.Brotli.dll
+?           ?       System.IO.Compression.dll
+?           ?       System.IO.Compression.FileSystem.dll
+?           ?       System.IO.Compression.ZipFile.dll
+?           ?       System.IO.dll
+?           ?       System.IO.FileSystem.AccessControl.dll
+?           ?       System.IO.FileSystem.dll
+?           ?       System.IO.FileSystem.DriveInfo.dll
+?           ?       System.IO.FileSystem.Primitives.dll
+?           ?       System.IO.FileSystem.Watcher.dll
+?           ?       System.IO.IsolatedStorage.dll
+?           ?       System.IO.MemoryMappedFiles.dll
+?           ?       System.IO.Pipelines.dll
+?           ?       System.IO.Pipes.AccessControl.dll
+?           ?       System.IO.Pipes.dll
+?           ?       System.IO.UnmanagedMemoryStream.dll
+?           ?       System.Linq.AsyncEnumerable.dll
+?           ?       System.Linq.dll
+?           ?       System.Linq.Expressions.dll
+?           ?       System.Linq.Parallel.dll
+?           ?       System.Linq.Queryable.dll
+?           ?       System.Memory.dll
+?           ?       System.Net.dll
+?           ?       System.Net.Http.dll
+?           ?       System.Net.Http.Json.dll
+?           ?       System.Net.HttpListener.dll
+?           ?       System.Net.Mail.dll
+?           ?       System.Net.NameResolution.dll
+?           ?       System.Net.NetworkInformation.dll
+?           ?       System.Net.Ping.dll
+?           ?       System.Net.Primitives.dll
+?           ?       System.Net.Quic.dll
+?           ?       System.Net.Requests.dll
+?           ?       System.Net.Security.dll
+?           ?       System.Net.ServerSentEvents.dll
+?           ?       System.Net.ServicePoint.dll
+?           ?       System.Net.Sockets.dll
+?           ?       System.Net.WebClient.dll
+?           ?       System.Net.WebHeaderCollection.dll
+?           ?       System.Net.WebProxy.dll
+?           ?       System.Net.WebSockets.Client.dll
+?           ?       System.Net.WebSockets.dll
+?           ?       System.Numerics.dll
+?           ?       System.Numerics.Vectors.dll
+?           ?       System.ObjectModel.dll
+?           ?       System.Reflection.DispatchProxy.dll
+?           ?       System.Reflection.dll
+?           ?       System.Reflection.Emit.dll
+?           ?       System.Reflection.Emit.ILGeneration.dll
+?           ?       System.Reflection.Emit.Lightweight.dll
+?           ?       System.Reflection.Extensions.dll
+?           ?       System.Reflection.Metadata.dll
+?           ?       System.Reflection.Primitives.dll
+?           ?       System.Reflection.TypeExtensions.dll
+?           ?       System.Resources.Reader.dll
+?           ?       System.Resources.ResourceManager.dll
+?           ?       System.Resources.Writer.dll
+?           ?       System.Runtime.CompilerServices.Unsafe.dll
+?           ?       System.Runtime.CompilerServices.VisualC.dll
+?           ?       System.Runtime.dll
+?           ?       System.Runtime.Extensions.dll
+?           ?       System.Runtime.Handles.dll
+?           ?       System.Runtime.InteropServices.dll
+?           ?       System.Runtime.InteropServices.JavaScript.dll
+?           ?       System.Runtime.InteropServices.RuntimeInformation.dll
+?           ?       System.Runtime.Intrinsics.dll
+?           ?       System.Runtime.Loader.dll
+?           ?       System.Runtime.Numerics.dll
+?           ?       System.Runtime.Serialization.dll
+?           ?       System.Runtime.Serialization.Formatters.dll
+?           ?       System.Runtime.Serialization.Json.dll
+?           ?       System.Runtime.Serialization.Primitives.dll
+?           ?       System.Runtime.Serialization.Xml.dll
+?           ?       System.Security.AccessControl.dll
+?           ?       System.Security.Claims.dll
+?           ?       System.Security.Cryptography.Algorithms.dll
+?           ?       System.Security.Cryptography.Cng.dll
+?           ?       System.Security.Cryptography.Csp.dll
+?           ?       System.Security.Cryptography.dll
+?           ?       System.Security.Cryptography.Encoding.dll
+?           ?       System.Security.Cryptography.OpenSsl.dll
+?           ?       System.Security.Cryptography.Primitives.dll
+?           ?       System.Security.Cryptography.X509Certificates.dll
+?           ?       System.Security.Cryptography.Xml.dll
+?           ?       System.Security.dll
+?           ?       System.Security.Principal.dll
+?           ?       System.Security.Principal.Windows.dll
+?           ?       System.Security.SecureString.dll
+?           ?       System.ServiceModel.Web.dll
+?           ?       System.ServiceProcess.dll
+?           ?       System.Text.Encoding.CodePages.dll
+?           ?       System.Text.Encoding.dll
+?           ?       System.Text.Encoding.Extensions.dll
+?           ?       System.Text.Encodings.Web.dll
+?           ?       System.Text.Json.dll
+?           ?       System.Text.RegularExpressions.dll
+?           ?       System.Threading.AccessControl.dll
+?           ?       System.Threading.Channels.dll
+?           ?       System.Threading.dll
+?           ?       System.Threading.Overlapped.dll
+?           ?       System.Threading.RateLimiting.dll
+?           ?       System.Threading.Tasks.Dataflow.dll
+?           ?       System.Threading.Tasks.dll
+?           ?       System.Threading.Tasks.Extensions.dll
+?           ?       System.Threading.Tasks.Parallel.dll
+?           ?       System.Threading.Thread.dll
+?           ?       System.Threading.ThreadPool.dll
+?           ?       System.Threading.Timer.dll
+?           ?       System.Transactions.dll
+?           ?       System.Transactions.Local.dll
+?           ?       System.ValueTuple.dll
+?           ?       System.Web.dll
+?           ?       System.Web.HttpUtility.dll
+?           ?       System.Windows.dll
+?           ?       System.Xml.dll
+?           ?       System.Xml.Linq.dll
+?           ?       System.Xml.ReaderWriter.dll
+?           ?       System.Xml.Serialization.dll
+?           ?       System.Xml.XDocument.dll
+?           ?       System.Xml.XmlDocument.dll
+?           ?       System.Xml.XmlSerializer.dll
+?           ?       System.Xml.XPath.dll
+?           ?       System.Xml.XPath.XDocument.dll
+?           ?       WindowsBase.dll
+?           ?       
+?           ????ru
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????runtimes
+?           ?   ????win
+?           ?       ????lib
+?           ?           ????net7.0
+?           ?                   Microsoft.Win32.SystemEvents.dll
+?           ?                   System.Drawing.Common.dll
+?           ?                   
+?           ????tr
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????zh-Hans
+?           ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?           ?       Microsoft.CodeAnalysis.resources.dll
+?           ?       
+?           ????zh-Hant
+?                   Microsoft.CodeAnalysis.CSharp.resources.dll
+?                   Microsoft.CodeAnalysis.resources.dll
+?                   
+????Controllers
+?       HomeController.cs
+?       
+????Helpers
+?       PersianCalendarHelper.cs
+?       
+????Models
+?       FormData.cs
+?       
+????Modelsmkdir
+????obj
+?   ?   MyExcelApp.csproj.nuget.dgspec.json
+?   ?   MyExcelApp.csproj.nuget.g.props
+?   ?   MyExcelApp.csproj.nuget.g.targets
+?   ?   project.assets.json
+?   ?   project.nuget.cache
+?   ?   
+?   ????Debug
+?   ?   ????net10.0
+?   ?       ?   .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+?   ?       ?   apphost.exe
+?   ?       ?   MyExcelApp.AssemblyInfo.cs
+?   ?       ?   MyExcelApp.AssemblyInfoInputs.cache
+?   ?       ?   MyExcelApp.assets.cache
+?   ?       ?   MyExcelApp.csproj.AssemblyReference.cache
+?   ?       ?   MyExcelApp.csproj.CoreCompileInputs.cache
+?   ?       ?   MyExcelApp.csproj.FileListAbsolute.txt
+?   ?       ?   MyExcelApp.csproj.Up2Date
+?   ?       ?   MyExcelApp.dll
+?   ?       ?   MyExcelApp.GeneratedMSBuildEditorConfig.editorconfig
+?   ?       ?   MyExcelApp.genruntimeconfig.cache
+?   ?       ?   MyExcelApp.GlobalUsings.g.cs
+?   ?       ?   MyExcelApp.MvcApplicationPartsAssemblyInfo.cache
+?   ?       ?   MyExcelApp.MvcApplicationPartsAssemblyInfo.cs
+?   ?       ?   MyExcelApp.pdb
+?   ?       ?   MyExcelApp.RazorAssemblyInfo.cache
+?   ?       ?   MyExcelApp.RazorAssemblyInfo.cs
+?   ?       ?   rbcswa.dswa.cache.json
+?   ?       ?   rjimswa.dswa.cache.json
+?   ?       ?   rjsmcshtml.dswa.cache.json
+?   ?       ?   rjsmrazor.dswa.cache.json
+?   ?       ?   rpswa.dswa.cache.json
+?   ?       ?   staticwebassets.build.endpoints.json
+?   ?       ?   staticwebassets.build.json
+?   ?       ?   staticwebassets.build.json.cache
+?   ?       ?   staticwebassets.development.json
+?   ?       ?   swae.build.ex.cache
+?   ?       ?   
+?   ?       ????compressed
+?   ?       ?       0pdo10s4gp-{0}-mrlpezrjn3-mrlpezrjn3.gz
+?   ?       ?       1wm87sl09b-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+?   ?       ?       2dracz2sur-{0}-khv3u5hwcm-khv3u5hwcm.gz
+?   ?       ?       2uj5n7gmlx-{0}-c2jlpeoesf-c2jlpeoesf.gz
+?   ?       ?       34wyp2p36j-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+?   ?       ?       3pugbdjxax-{0}-06098lyss8-06098lyss8.gz
+?   ?       ?       3qyyi76igo-{0}-ft3s53vfgj-ft3s53vfgj.gz
+?   ?       ?       40u9x1ep6g-{0}-61n19gt1b8-61n19gt1b8.gz
+?   ?       ?       4nks6mwwg2-{0}-erw9l3u2r3-erw9l3u2r3.gz
+?   ?       ?       4rpy5ox3js-{0}-dxx9fxp4il-dxx9fxp4il.gz
+?   ?       ?       563ijdn118-{0}-kva5d914fq-kva5d914fq.gz
+?   ?       ?       5osyvdmb25-{0}-4v8eqarkd7-4v8eqarkd7.gz
+?   ?       ?       64zpwsk37u-{0}-tdbxkamptv-tdbxkamptv.gz
+?   ?       ?       8audw2w2ki-{0}-37tfw0ft22-37tfw0ft22.gz
+?   ?       ?       8gfg3h6ca6-{0}-493y06b0oq-493y06b0oq.gz
+?   ?       ?       8nmgrmybg4-{0}-83jwlth58m-83jwlth58m.gz
+?   ?       ?       8p5rwm32qp-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+?   ?       ?       b2c3a44y4f-{0}-muycvpuwrr-muycvpuwrr.gz
+?   ?       ?       bp13ggpwcb-{0}-vr1egmr9el-vr1egmr9el.gz
+?   ?       ?       c7ytc1fzoz-{0}-b7pk76d08c-b7pk76d08c.gz
+?   ?       ?       cy8ps631av-{0}-c2oey78nd0-c2oey78nd0.gz
+?   ?       ?       daus2uh65y-{0}-cosvhxvwiu-cosvhxvwiu.gz
+?   ?       ?       e5qopnnz3e-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+?   ?       ?       eids3lieys-{0}-y7v9cxd14o-y7v9cxd14o.gz
+?   ?       ?       eo9ke9ljf4-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+?   ?       ?       esndxlncwu-{0}-ausgxo2sd3-ausgxo2sd3.gz
+?   ?       ?       gg0mp6n9ve-{0}-6pdc2jztkx-6pdc2jztkx.gz
+?   ?       ?       gr4dg2ea3z-{0}-hrwsygsryq-hrwsygsryq.gz
+?   ?       ?       h0o67rzj8l-{0}-kva5d914fq-kva5d914fq.gz
+?   ?       ?       h69ex26s1o-{0}-nvvlpmu67g-nvvlpmu67g.gz
+?   ?       ?       i1ej37qjr1-{0}-kbrnm935zg-kbrnm935zg.gz
+?   ?       ?       icmpw7ms2h-{0}-notf2xhcfb-notf2xhcfb.gz
+?   ?       ?       j0td4i9upu-{0}-ttgo8qnofa-ttgo8qnofa.gz
+?   ?       ?       j0wpl5e16v-{0}-0i3buxo5is-0i3buxo5is.gz
+?   ?       ?       j2k70q2dqn-{0}-s35ty4nyc5-s35ty4nyc5.gz
+?   ?       ?       jkdb601c1f-{0}-jd9uben2k1-jd9uben2k1.gz
+?   ?       ?       jng6ntt6hx-{0}-6cfz1n2cew-6cfz1n2cew.gz
+?   ?       ?       jq5layu14e-{0}-0j3bgjxly4-0j3bgjxly4.gz
+?   ?       ?       jt8x8i6f9e-{0}-ub07r2b239-ub07r2b239.gz
+?   ?       ?       kncycdhz3s-{0}-o1o13a6vjx-o1o13a6vjx.gz
+?   ?       ?       ktpg4cl1h1-{0}-47otxtyo56-47otxtyo56.gz
+?   ?       ?       moqlb1so6x-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+?   ?       ?       p4tj9ey8o9-{0}-iovd86k7lj-iovd86k7lj.gz
+?   ?       ?       pkzh3nlqkm-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+?   ?       ?       qaedw70u0g-{0}-v0zj4ognzu-v0zj4ognzu.gz
+?   ?       ?       qnitqfe94q-{0}-d7shbmvgxk-d7shbmvgxk.gz
+?   ?       ?       r09ukkv4ap-{0}-pj5nd1wqec-pj5nd1wqec.gz
+?   ?       ?       rkdvuiv07u-{0}-aexeepp0ev-aexeepp0ev.gz
+?   ?       ?       s2iy5pnu71-{0}-ag7o75518u-ag7o75518u.gz
+?   ?       ?       s3vbgqjrv5-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+?   ?       ?       s4sh5z6j28-{0}-b9sayid5wm-b9sayid5wm.gz
+?   ?       ?       tn2gr8wne9-{0}-h1s4sie4z3-h1s4sie4z3.gz
+?   ?       ?       tp083bydgv-{0}-356vix0kms-356vix0kms.gz
+?   ?       ?       u7pdqrttwm-{0}-taosp88ngz-taosp88ngz.gz
+?   ?       ?       vpkxqp8dwx-{0}-mlv21k5csn-mlv21k5csn.gz
+?   ?       ?       vr3qqvalfu-{0}-bqjiyaj88i-bqjiyaj88i.gz
+?   ?       ?       wrlkstn6c3-{0}-63fj8s7r0e-63fj8s7r0e.gz
+?   ?       ?       y4duxfmyqj-{0}-46ein0sx1k-46ein0sx1k.gz
+?   ?       ?       yausbb7fsk-{0}-fsbi9cje9m-fsbi9cje9m.gz
+?   ?       ?       ybd3txgl6v-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+?   ?       ?       yepqxyxddj-{0}-87fc7y1x7t-87fc7y1x7t.gz
+?   ?       ?       yfm0xw93z5-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+?   ?       ?       yuihy1jvw3-{0}-rzd6atqjts-rzd6atqjts.gz
+?   ?       ?       zlph66sjyk-{0}-j5mq2jizvt-j5mq2jizvt.gz
+?   ?       ?       zrhgmwgxm4-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+?   ?       ?       
+?   ?       ????ref
+?   ?       ?       MyExcelApp.dll
+?   ?       ?       
+?   ?       ????refint
+?   ?       ?       MyExcelApp.dll
+?   ?       ?       
+?   ?       ????scopedcss
+?   ?       ?   ????bundle
+?   ?       ?   ?       MyExcelApp.styles.css
+?   ?       ?   ?       
+?   ?       ?   ????Pages
+?   ?       ?   ?   ????Shared
+?   ?       ?   ?           _Layout.cshtml.rz.scp.css
+?   ?       ?   ?           
+?   ?       ?   ????projectbundle
+?   ?       ?           MyExcelApp.bundle.scp.css
+?   ?       ?           
+?   ?       ????staticwebassets
+?   ????Release
+?       ????net10.0
+?           ?   .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+?           ?   apphost.exe
+?           ?   MyExcelApp.AssemblyInfo.cs
+?           ?   MyExcelApp.AssemblyInfoInputs.cache
+?           ?   MyExcelApp.assets.cache
+?           ?   MyExcelApp.csproj.AssemblyReference.cache
+?           ?   MyExcelApp.csproj.CoreCompileInputs.cache
+?           ?   MyExcelApp.csproj.FileListAbsolute.txt
+?           ?   MyExcelApp.csproj.Up2Date
+?           ?   MyExcelApp.dll
+?           ?   MyExcelApp.GeneratedMSBuildEditorConfig.editorconfig
+?           ?   MyExcelApp.genruntimeconfig.cache
+?           ?   MyExcelApp.GlobalUsings.g.cs
+?           ?   MyExcelApp.MvcApplicationPartsAssemblyInfo.cache
+?           ?   MyExcelApp.MvcApplicationPartsAssemblyInfo.cs
+?           ?   MyExcelApp.pdb
+?           ?   MyExcelApp.RazorAssemblyInfo.cache
+?           ?   MyExcelApp.RazorAssemblyInfo.cs
+?           ?   PublishOutputs.7427f92918.txt
+?           ?   rbcswa.dswa.cache.json
+?           ?   rjimswa.dswa.cache.json
+?           ?   rjsmcshtml.dswa.cache.json
+?           ?   rjsmrazor.dswa.cache.json
+?           ?   rpswa.dswa.cache.json
+?           ?   staticwebassets.build.endpoints.json
+?           ?   staticwebassets.build.json
+?           ?   staticwebassets.build.json.cache
+?           ?   staticwebassets.development.json
+?           ?   staticwebassets.publish.endpoints.json
+?           ?   staticwebassets.publish.json
+?           ?   swae.build.ex.cache
+?           ?   swae.publish.ex.cache
+?           ?   
+?           ????compressed
+?           ?   ?   0pdo10s4gp-{0}-mrlpezrjn3-mrlpezrjn3.gz
+?           ?   ?   1wm87sl09b-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+?           ?   ?   2dracz2sur-{0}-khv3u5hwcm-khv3u5hwcm.gz
+?           ?   ?   2uj5n7gmlx-{0}-c2jlpeoesf-c2jlpeoesf.gz
+?           ?   ?   34wyp2p36j-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+?           ?   ?   3pugbdjxax-{0}-06098lyss8-06098lyss8.gz
+?           ?   ?   3qyyi76igo-{0}-ft3s53vfgj-ft3s53vfgj.gz
+?           ?   ?   40u9x1ep6g-{0}-61n19gt1b8-61n19gt1b8.gz
+?           ?   ?   4nks6mwwg2-{0}-erw9l3u2r3-erw9l3u2r3.gz
+?           ?   ?   4rpy5ox3js-{0}-dxx9fxp4il-dxx9fxp4il.gz
+?           ?   ?   563ijdn118-{0}-kva5d914fq-kva5d914fq.gz
+?           ?   ?   5osyvdmb25-{0}-4v8eqarkd7-4v8eqarkd7.gz
+?           ?   ?   64zpwsk37u-{0}-tdbxkamptv-tdbxkamptv.gz
+?           ?   ?   8audw2w2ki-{0}-37tfw0ft22-37tfw0ft22.gz
+?           ?   ?   8gfg3h6ca6-{0}-493y06b0oq-493y06b0oq.gz
+?           ?   ?   8nmgrmybg4-{0}-83jwlth58m-83jwlth58m.gz
+?           ?   ?   8p5rwm32qp-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+?           ?   ?   b2c3a44y4f-{0}-muycvpuwrr-muycvpuwrr.gz
+?           ?   ?   bp13ggpwcb-{0}-vr1egmr9el-vr1egmr9el.gz
+?           ?   ?   c7ytc1fzoz-{0}-b7pk76d08c-b7pk76d08c.gz
+?           ?   ?   cy8ps631av-{0}-c2oey78nd0-c2oey78nd0.gz
+?           ?   ?   daus2uh65y-{0}-cosvhxvwiu-cosvhxvwiu.gz
+?           ?   ?   e5qopnnz3e-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+?           ?   ?   eids3lieys-{0}-y7v9cxd14o-y7v9cxd14o.gz
+?           ?   ?   eo9ke9ljf4-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+?           ?   ?   esndxlncwu-{0}-ausgxo2sd3-ausgxo2sd3.gz
+?           ?   ?   gg0mp6n9ve-{0}-6pdc2jztkx-6pdc2jztkx.gz
+?           ?   ?   gr4dg2ea3z-{0}-hrwsygsryq-hrwsygsryq.gz
+?           ?   ?   h0o67rzj8l-{0}-kva5d914fq-kva5d914fq.gz
+?           ?   ?   h69ex26s1o-{0}-nvvlpmu67g-nvvlpmu67g.gz
+?           ?   ?   i1ej37qjr1-{0}-kbrnm935zg-kbrnm935zg.gz
+?           ?   ?   icmpw7ms2h-{0}-notf2xhcfb-notf2xhcfb.gz
+?           ?   ?   j0td4i9upu-{0}-ttgo8qnofa-ttgo8qnofa.gz
+?           ?   ?   j0wpl5e16v-{0}-0i3buxo5is-0i3buxo5is.gz
+?           ?   ?   j2k70q2dqn-{0}-s35ty4nyc5-s35ty4nyc5.gz
+?           ?   ?   jkdb601c1f-{0}-jd9uben2k1-jd9uben2k1.gz
+?           ?   ?   jng6ntt6hx-{0}-6cfz1n2cew-6cfz1n2cew.gz
+?           ?   ?   jq5layu14e-{0}-0j3bgjxly4-0j3bgjxly4.gz
+?           ?   ?   jt8x8i6f9e-{0}-ub07r2b239-ub07r2b239.gz
+?           ?   ?   kncycdhz3s-{0}-o1o13a6vjx-o1o13a6vjx.gz
+?           ?   ?   ktpg4cl1h1-{0}-47otxtyo56-47otxtyo56.gz
+?           ?   ?   moqlb1so6x-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+?           ?   ?   p4tj9ey8o9-{0}-iovd86k7lj-iovd86k7lj.gz
+?           ?   ?   pkzh3nlqkm-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+?           ?   ?   qaedw70u0g-{0}-v0zj4ognzu-v0zj4ognzu.gz
+?           ?   ?   qnitqfe94q-{0}-d7shbmvgxk-d7shbmvgxk.gz
+?           ?   ?   r09ukkv4ap-{0}-pj5nd1wqec-pj5nd1wqec.gz
+?           ?   ?   rkdvuiv07u-{0}-aexeepp0ev-aexeepp0ev.gz
+?           ?   ?   s2iy5pnu71-{0}-ag7o75518u-ag7o75518u.gz
+?           ?   ?   s3vbgqjrv5-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+?           ?   ?   s4sh5z6j28-{0}-b9sayid5wm-b9sayid5wm.gz
+?           ?   ?   tn2gr8wne9-{0}-h1s4sie4z3-h1s4sie4z3.gz
+?           ?   ?   tp083bydgv-{0}-356vix0kms-356vix0kms.gz
+?           ?   ?   u7pdqrttwm-{0}-taosp88ngz-taosp88ngz.gz
+?           ?   ?   vpkxqp8dwx-{0}-mlv21k5csn-mlv21k5csn.gz
+?           ?   ?   vr3qqvalfu-{0}-bqjiyaj88i-bqjiyaj88i.gz
+?           ?   ?   wrlkstn6c3-{0}-63fj8s7r0e-63fj8s7r0e.gz
+?           ?   ?   y4duxfmyqj-{0}-46ein0sx1k-46ein0sx1k.gz
+?           ?   ?   yausbb7fsk-{0}-fsbi9cje9m-fsbi9cje9m.gz
+?           ?   ?   ybd3txgl6v-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+?           ?   ?   yepqxyxddj-{0}-87fc7y1x7t-87fc7y1x7t.gz
+?           ?   ?   yfm0xw93z5-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+?           ?   ?   yuihy1jvw3-{0}-rzd6atqjts-rzd6atqjts.gz
+?           ?   ?   zlph66sjyk-{0}-j5mq2jizvt-j5mq2jizvt.gz
+?           ?   ?   zrhgmwgxm4-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+?           ?   ?   
+?           ?   ????publish
+?           ?           0pdo10s4gp-{0}-mrlpezrjn3-mrlpezrjn3.br
+?           ?           1wm87sl09b-{0}-lzl9nlhx6b-lzl9nlhx6b.br
+?           ?           2dracz2sur-{0}-khv3u5hwcm-khv3u5hwcm.br
+?           ?           2uj5n7gmlx-{0}-c2jlpeoesf-c2jlpeoesf.br
+?           ?           34wyp2p36j-{0}-ee0r1s7dh0-ee0r1s7dh0.br
+?           ?           3pugbdjxax-{0}-06098lyss8-06098lyss8.br
+?           ?           3qyyi76igo-{0}-ft3s53vfgj-ft3s53vfgj.br
+?           ?           40u9x1ep6g-{0}-61n19gt1b8-61n19gt1b8.br
+?           ?           4nks6mwwg2-{0}-erw9l3u2r3-erw9l3u2r3.br
+?           ?           4rpy5ox3js-{0}-dxx9fxp4il-dxx9fxp4il.br
+?           ?           563ijdn118-{0}-kva5d914fq-kva5d914fq.br
+?           ?           5osyvdmb25-{0}-4v8eqarkd7-4v8eqarkd7.br
+?           ?           64zpwsk37u-{0}-tdbxkamptv-tdbxkamptv.br
+?           ?           8audw2w2ki-{0}-37tfw0ft22-37tfw0ft22.br
+?           ?           8gfg3h6ca6-{0}-493y06b0oq-493y06b0oq.br
+?           ?           8nmgrmybg4-{0}-83jwlth58m-83jwlth58m.br
+?           ?           8p5rwm32qp-{0}-r4e9w2rdcm-r4e9w2rdcm.br
+?           ?           b2c3a44y4f-{0}-muycvpuwrr-muycvpuwrr.br
+?           ?           bp13ggpwcb-{0}-vr1egmr9el-vr1egmr9el.br
+?           ?           c7ytc1fzoz-{0}-b7pk76d08c-b7pk76d08c.br
+?           ?           cy8ps631av-{0}-c2oey78nd0-c2oey78nd0.br
+?           ?           daus2uh65y-{0}-cosvhxvwiu-cosvhxvwiu.br
+?           ?           e5qopnnz3e-{0}-xtxxf3hu2r-xtxxf3hu2r.br
+?           ?           eids3lieys-{0}-y7v9cxd14o-y7v9cxd14o.br
+?           ?           eo9ke9ljf4-{0}-2z0ns9nrw6-2z0ns9nrw6.br
+?           ?           esndxlncwu-{0}-ausgxo2sd3-ausgxo2sd3.br
+?           ?           gg0mp6n9ve-{0}-6pdc2jztkx-6pdc2jztkx.br
+?           ?           gr4dg2ea3z-{0}-hrwsygsryq-hrwsygsryq.br
+?           ?           h0o67rzj8l-{0}-kva5d914fq-kva5d914fq.br
+?           ?           h69ex26s1o-{0}-nvvlpmu67g-nvvlpmu67g.br
+?           ?           i1ej37qjr1-{0}-kbrnm935zg-kbrnm935zg.br
+?           ?           icmpw7ms2h-{0}-notf2xhcfb-notf2xhcfb.br
+?           ?           j0td4i9upu-{0}-ttgo8qnofa-ttgo8qnofa.br
+?           ?           j0wpl5e16v-{0}-0i3buxo5is-0i3buxo5is.br
+?           ?           j2k70q2dqn-{0}-s35ty4nyc5-s35ty4nyc5.br
+?           ?           jkdb601c1f-{0}-jd9uben2k1-jd9uben2k1.br
+?           ?           jng6ntt6hx-{0}-6cfz1n2cew-6cfz1n2cew.br
+?           ?           jq5layu14e-{0}-0j3bgjxly4-0j3bgjxly4.br
+?           ?           jt8x8i6f9e-{0}-ub07r2b239-ub07r2b239.br
+?           ?           kncycdhz3s-{0}-o1o13a6vjx-o1o13a6vjx.br
+?           ?           ktpg4cl1h1-{0}-47otxtyo56-47otxtyo56.br
+?           ?           moqlb1so6x-{0}-k8d9w2qqmf-k8d9w2qqmf.br
+?           ?           p4tj9ey8o9-{0}-iovd86k7lj-iovd86k7lj.br
+?           ?           pkzh3nlqkm-{0}-jj8uyg4cgr-jj8uyg4cgr.br
+?           ?           qaedw70u0g-{0}-v0zj4ognzu-v0zj4ognzu.br
+?           ?           qnitqfe94q-{0}-d7shbmvgxk-d7shbmvgxk.br
+?           ?           r09ukkv4ap-{0}-pj5nd1wqec-pj5nd1wqec.br
+?           ?           rkdvuiv07u-{0}-aexeepp0ev-aexeepp0ev.br
+?           ?           s2iy5pnu71-{0}-ag7o75518u-ag7o75518u.br
+?           ?           s3vbgqjrv5-{0}-fvhpjtyr6v-fvhpjtyr6v.br
+?           ?           s4sh5z6j28-{0}-b9sayid5wm-b9sayid5wm.br
+?           ?           tn2gr8wne9-{0}-h1s4sie4z3-h1s4sie4z3.br
+?           ?           tp083bydgv-{0}-356vix0kms-356vix0kms.br
+?           ?           u7pdqrttwm-{0}-taosp88ngz-taosp88ngz.br
+?           ?           vpkxqp8dwx-{0}-mlv21k5csn-mlv21k5csn.br
+?           ?           vr3qqvalfu-{0}-bqjiyaj88i-bqjiyaj88i.br
+?           ?           wrlkstn6c3-{0}-63fj8s7r0e-63fj8s7r0e.br
+?           ?           y4duxfmyqj-{0}-46ein0sx1k-46ein0sx1k.br
+?           ?           yausbb7fsk-{0}-fsbi9cje9m-fsbi9cje9m.br
+?           ?           ybd3txgl6v-{0}-pk9g2wxc8p-pk9g2wxc8p.br
+?           ?           yepqxyxddj-{0}-87fc7y1x7t-87fc7y1x7t.br
+?           ?           yfm0xw93z5-{0}-x0q3zqp4vz-x0q3zqp4vz.br
+?           ?           yuihy1jvw3-{0}-rzd6atqjts-rzd6atqjts.br
+?           ?           zlph66sjyk-{0}-j5mq2jizvt-j5mq2jizvt.br
+?           ?           zrhgmwgxm4-{0}-lcd1t2u6c8-lcd1t2u6c8.br
+?           ?           
+?           ????ref
+?           ?       MyExcelApp.dll
+?           ?       
+?           ????refint
+?           ?       MyExcelApp.dll
+?           ?       
+?           ????scopedcss
+?           ?   ????bundle
+?           ?   ?       MyExcelApp.styles.css
+?           ?   ?       
+?           ?   ????Pages
+?           ?   ?   ????Shared
+?           ?   ?           _Layout.cshtml.rz.scp.css
+?           ?   ?           
+?           ?   ????projectbundle
+?           ?           MyExcelApp.bundle.scp.css
+?           ?           
+?           ????staticwebassets
+????Pages
+?   ?   Error.cshtml
+?   ?   Error.cshtml.cs
+?   ?   Index.cshtml
+?   ?   Index.cshtml.cs
+?   ?   Privacy.cshtml
+?   ?   Privacy.cshtml.cs
+?   ?   _ViewImports.cshtml
+?   ?   _ViewStart.cshtml
+?   ?   
+?   ????Shared
+?           _Layout.cshtml
+?           _Layout.cshtml.css
+?           _ValidationScriptsPartial.cshtml
+?           
+????Properties
+?       launchSettings.json
+?       
+????publish
+?   ?   appsettings.Development.json
+?   ?   appsettings.json
+?   ?   EPPlus.dll
+?   ?   EPPlus.Interfaces.dll
+?   ?   EPPlus.System.Drawing.dll
+?   ?   Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+?   ?   Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+?   ?   Microsoft.AspNetCore.Razor.Language.dll
+?   ?   Microsoft.CodeAnalysis.CSharp.dll
+?   ?   Microsoft.CodeAnalysis.dll
+?   ?   Microsoft.CodeAnalysis.Razor.dll
+?   ?   Microsoft.Extensions.DependencyModel.dll
+?   ?   Microsoft.IO.RecyclableMemoryStream.dll
+?   ?   Microsoft.Win32.SystemEvents.dll
+?   ?   MyExcelApp.deps.json
+?   ?   MyExcelApp.dll
+?   ?   MyExcelApp.exe
+?   ?   MyExcelApp.pdb
+?   ?   MyExcelApp.runtimeconfig.json
+?   ?   MyExcelApp.staticwebassets.endpoints.json
+?   ?   System.Drawing.Common.dll
+?   ?   web.config
+?   ?   
+?   ????cs
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????de
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????es
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????fr
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????it
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????ja
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????ko
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????pl
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????pt-BR
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????refs
+?   ?       Microsoft.AspNetCore.Antiforgery.dll
+?   ?       Microsoft.AspNetCore.Authentication.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Authentication.BearerToken.dll
+?   ?       Microsoft.AspNetCore.Authentication.Cookies.dll
+?   ?       Microsoft.AspNetCore.Authentication.Core.dll
+?   ?       Microsoft.AspNetCore.Authentication.dll
+?   ?       Microsoft.AspNetCore.Authentication.OAuth.dll
+?   ?       Microsoft.AspNetCore.Authorization.dll
+?   ?       Microsoft.AspNetCore.Authorization.Policy.dll
+?   ?       Microsoft.AspNetCore.Components.Authorization.dll
+?   ?       Microsoft.AspNetCore.Components.dll
+?   ?       Microsoft.AspNetCore.Components.Endpoints.dll
+?   ?       Microsoft.AspNetCore.Components.Forms.dll
+?   ?       Microsoft.AspNetCore.Components.Server.dll
+?   ?       Microsoft.AspNetCore.Components.Web.dll
+?   ?       Microsoft.AspNetCore.Connections.Abstractions.dll
+?   ?       Microsoft.AspNetCore.CookiePolicy.dll
+?   ?       Microsoft.AspNetCore.Cors.dll
+?   ?       Microsoft.AspNetCore.Cryptography.Internal.dll
+?   ?       Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+?   ?       Microsoft.AspNetCore.DataProtection.Abstractions.dll
+?   ?       Microsoft.AspNetCore.DataProtection.dll
+?   ?       Microsoft.AspNetCore.DataProtection.Extensions.dll
+?   ?       Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Diagnostics.dll
+?   ?       Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+?   ?       Microsoft.AspNetCore.dll
+?   ?       Microsoft.AspNetCore.HostFiltering.dll
+?   ?       Microsoft.AspNetCore.Hosting.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Hosting.dll
+?   ?       Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Html.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Http.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Http.Connections.Common.dll
+?   ?       Microsoft.AspNetCore.Http.Connections.dll
+?   ?       Microsoft.AspNetCore.Http.dll
+?   ?       Microsoft.AspNetCore.Http.Extensions.dll
+?   ?       Microsoft.AspNetCore.Http.Features.dll
+?   ?       Microsoft.AspNetCore.Http.Results.dll
+?   ?       Microsoft.AspNetCore.HttpLogging.dll
+?   ?       Microsoft.AspNetCore.HttpOverrides.dll
+?   ?       Microsoft.AspNetCore.HttpsPolicy.dll
+?   ?       Microsoft.AspNetCore.Identity.dll
+?   ?       Microsoft.AspNetCore.Localization.dll
+?   ?       Microsoft.AspNetCore.Localization.Routing.dll
+?   ?       Microsoft.AspNetCore.Metadata.dll
+?   ?       Microsoft.AspNetCore.Mvc.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+?   ?       Microsoft.AspNetCore.Mvc.Core.dll
+?   ?       Microsoft.AspNetCore.Mvc.Cors.dll
+?   ?       Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+?   ?       Microsoft.AspNetCore.Mvc.dll
+?   ?       Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+?   ?       Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+?   ?       Microsoft.AspNetCore.Mvc.Localization.dll
+?   ?       Microsoft.AspNetCore.Mvc.Razor.dll
+?   ?       Microsoft.AspNetCore.Mvc.RazorPages.dll
+?   ?       Microsoft.AspNetCore.Mvc.TagHelpers.dll
+?   ?       Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+?   ?       Microsoft.AspNetCore.OutputCaching.dll
+?   ?       Microsoft.AspNetCore.RateLimiting.dll
+?   ?       Microsoft.AspNetCore.Razor.dll
+?   ?       Microsoft.AspNetCore.Razor.Runtime.dll
+?   ?       Microsoft.AspNetCore.RequestDecompression.dll
+?   ?       Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+?   ?       Microsoft.AspNetCore.ResponseCaching.dll
+?   ?       Microsoft.AspNetCore.ResponseCompression.dll
+?   ?       Microsoft.AspNetCore.Rewrite.dll
+?   ?       Microsoft.AspNetCore.Routing.Abstractions.dll
+?   ?       Microsoft.AspNetCore.Routing.dll
+?   ?       Microsoft.AspNetCore.Server.HttpSys.dll
+?   ?       Microsoft.AspNetCore.Server.IIS.dll
+?   ?       Microsoft.AspNetCore.Server.IISIntegration.dll
+?   ?       Microsoft.AspNetCore.Server.Kestrel.Core.dll
+?   ?       Microsoft.AspNetCore.Server.Kestrel.dll
+?   ?       Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+?   ?       Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+?   ?       Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+?   ?       Microsoft.AspNetCore.Session.dll
+?   ?       Microsoft.AspNetCore.SignalR.Common.dll
+?   ?       Microsoft.AspNetCore.SignalR.Core.dll
+?   ?       Microsoft.AspNetCore.SignalR.dll
+?   ?       Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+?   ?       Microsoft.AspNetCore.StaticAssets.dll
+?   ?       Microsoft.AspNetCore.StaticFiles.dll
+?   ?       Microsoft.AspNetCore.WebSockets.dll
+?   ?       Microsoft.AspNetCore.WebUtilities.dll
+?   ?       Microsoft.CSharp.dll
+?   ?       Microsoft.Extensions.Caching.Abstractions.dll
+?   ?       Microsoft.Extensions.Caching.Memory.dll
+?   ?       Microsoft.Extensions.Configuration.Abstractions.dll
+?   ?       Microsoft.Extensions.Configuration.Binder.dll
+?   ?       Microsoft.Extensions.Configuration.CommandLine.dll
+?   ?       Microsoft.Extensions.Configuration.dll
+?   ?       Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+?   ?       Microsoft.Extensions.Configuration.FileExtensions.dll
+?   ?       Microsoft.Extensions.Configuration.Ini.dll
+?   ?       Microsoft.Extensions.Configuration.Json.dll
+?   ?       Microsoft.Extensions.Configuration.KeyPerFile.dll
+?   ?       Microsoft.Extensions.Configuration.UserSecrets.dll
+?   ?       Microsoft.Extensions.Configuration.Xml.dll
+?   ?       Microsoft.Extensions.DependencyInjection.Abstractions.dll
+?   ?       Microsoft.Extensions.DependencyInjection.dll
+?   ?       Microsoft.Extensions.Diagnostics.Abstractions.dll
+?   ?       Microsoft.Extensions.Diagnostics.dll
+?   ?       Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+?   ?       Microsoft.Extensions.Diagnostics.HealthChecks.dll
+?   ?       Microsoft.Extensions.Features.dll
+?   ?       Microsoft.Extensions.FileProviders.Abstractions.dll
+?   ?       Microsoft.Extensions.FileProviders.Composite.dll
+?   ?       Microsoft.Extensions.FileProviders.Embedded.dll
+?   ?       Microsoft.Extensions.FileProviders.Physical.dll
+?   ?       Microsoft.Extensions.FileSystemGlobbing.dll
+?   ?       Microsoft.Extensions.Hosting.Abstractions.dll
+?   ?       Microsoft.Extensions.Hosting.dll
+?   ?       Microsoft.Extensions.Http.dll
+?   ?       Microsoft.Extensions.Identity.Core.dll
+?   ?       Microsoft.Extensions.Identity.Stores.dll
+?   ?       Microsoft.Extensions.Localization.Abstractions.dll
+?   ?       Microsoft.Extensions.Localization.dll
+?   ?       Microsoft.Extensions.Logging.Abstractions.dll
+?   ?       Microsoft.Extensions.Logging.Configuration.dll
+?   ?       Microsoft.Extensions.Logging.Console.dll
+?   ?       Microsoft.Extensions.Logging.Debug.dll
+?   ?       Microsoft.Extensions.Logging.dll
+?   ?       Microsoft.Extensions.Logging.EventLog.dll
+?   ?       Microsoft.Extensions.Logging.EventSource.dll
+?   ?       Microsoft.Extensions.Logging.TraceSource.dll
+?   ?       Microsoft.Extensions.ObjectPool.dll
+?   ?       Microsoft.Extensions.Options.ConfigurationExtensions.dll
+?   ?       Microsoft.Extensions.Options.DataAnnotations.dll
+?   ?       Microsoft.Extensions.Options.dll
+?   ?       Microsoft.Extensions.Primitives.dll
+?   ?       Microsoft.Extensions.Validation.dll
+?   ?       Microsoft.Extensions.WebEncoders.dll
+?   ?       Microsoft.JSInterop.dll
+?   ?       Microsoft.Net.Http.Headers.dll
+?   ?       Microsoft.VisualBasic.Core.dll
+?   ?       Microsoft.VisualBasic.dll
+?   ?       Microsoft.Win32.Primitives.dll
+?   ?       Microsoft.Win32.Registry.dll
+?   ?       mscorlib.dll
+?   ?       netstandard.dll
+?   ?       System.AppContext.dll
+?   ?       System.Buffers.dll
+?   ?       System.Collections.Concurrent.dll
+?   ?       System.Collections.dll
+?   ?       System.Collections.Immutable.dll
+?   ?       System.Collections.NonGeneric.dll
+?   ?       System.Collections.Specialized.dll
+?   ?       System.ComponentModel.Annotations.dll
+?   ?       System.ComponentModel.DataAnnotations.dll
+?   ?       System.ComponentModel.dll
+?   ?       System.ComponentModel.EventBasedAsync.dll
+?   ?       System.ComponentModel.Primitives.dll
+?   ?       System.ComponentModel.TypeConverter.dll
+?   ?       System.Configuration.dll
+?   ?       System.Console.dll
+?   ?       System.Core.dll
+?   ?       System.Data.Common.dll
+?   ?       System.Data.DataSetExtensions.dll
+?   ?       System.Data.dll
+?   ?       System.Diagnostics.Contracts.dll
+?   ?       System.Diagnostics.Debug.dll
+?   ?       System.Diagnostics.DiagnosticSource.dll
+?   ?       System.Diagnostics.EventLog.dll
+?   ?       System.Diagnostics.FileVersionInfo.dll
+?   ?       System.Diagnostics.Process.dll
+?   ?       System.Diagnostics.StackTrace.dll
+?   ?       System.Diagnostics.TextWriterTraceListener.dll
+?   ?       System.Diagnostics.Tools.dll
+?   ?       System.Diagnostics.TraceSource.dll
+?   ?       System.Diagnostics.Tracing.dll
+?   ?       System.dll
+?   ?       System.Drawing.dll
+?   ?       System.Drawing.Primitives.dll
+?   ?       System.Dynamic.Runtime.dll
+?   ?       System.Formats.Asn1.dll
+?   ?       System.Formats.Cbor.dll
+?   ?       System.Formats.Tar.dll
+?   ?       System.Globalization.Calendars.dll
+?   ?       System.Globalization.dll
+?   ?       System.Globalization.Extensions.dll
+?   ?       System.IO.Compression.Brotli.dll
+?   ?       System.IO.Compression.dll
+?   ?       System.IO.Compression.FileSystem.dll
+?   ?       System.IO.Compression.ZipFile.dll
+?   ?       System.IO.dll
+?   ?       System.IO.FileSystem.AccessControl.dll
+?   ?       System.IO.FileSystem.dll
+?   ?       System.IO.FileSystem.DriveInfo.dll
+?   ?       System.IO.FileSystem.Primitives.dll
+?   ?       System.IO.FileSystem.Watcher.dll
+?   ?       System.IO.IsolatedStorage.dll
+?   ?       System.IO.MemoryMappedFiles.dll
+?   ?       System.IO.Pipelines.dll
+?   ?       System.IO.Pipes.AccessControl.dll
+?   ?       System.IO.Pipes.dll
+?   ?       System.IO.UnmanagedMemoryStream.dll
+?   ?       System.Linq.AsyncEnumerable.dll
+?   ?       System.Linq.dll
+?   ?       System.Linq.Expressions.dll
+?   ?       System.Linq.Parallel.dll
+?   ?       System.Linq.Queryable.dll
+?   ?       System.Memory.dll
+?   ?       System.Net.dll
+?   ?       System.Net.Http.dll
+?   ?       System.Net.Http.Json.dll
+?   ?       System.Net.HttpListener.dll
+?   ?       System.Net.Mail.dll
+?   ?       System.Net.NameResolution.dll
+?   ?       System.Net.NetworkInformation.dll
+?   ?       System.Net.Ping.dll
+?   ?       System.Net.Primitives.dll
+?   ?       System.Net.Quic.dll
+?   ?       System.Net.Requests.dll
+?   ?       System.Net.Security.dll
+?   ?       System.Net.ServerSentEvents.dll
+?   ?       System.Net.ServicePoint.dll
+?   ?       System.Net.Sockets.dll
+?   ?       System.Net.WebClient.dll
+?   ?       System.Net.WebHeaderCollection.dll
+?   ?       System.Net.WebProxy.dll
+?   ?       System.Net.WebSockets.Client.dll
+?   ?       System.Net.WebSockets.dll
+?   ?       System.Numerics.dll
+?   ?       System.Numerics.Vectors.dll
+?   ?       System.ObjectModel.dll
+?   ?       System.Reflection.DispatchProxy.dll
+?   ?       System.Reflection.dll
+?   ?       System.Reflection.Emit.dll
+?   ?       System.Reflection.Emit.ILGeneration.dll
+?   ?       System.Reflection.Emit.Lightweight.dll
+?   ?       System.Reflection.Extensions.dll
+?   ?       System.Reflection.Metadata.dll
+?   ?       System.Reflection.Primitives.dll
+?   ?       System.Reflection.TypeExtensions.dll
+?   ?       System.Resources.Reader.dll
+?   ?       System.Resources.ResourceManager.dll
+?   ?       System.Resources.Writer.dll
+?   ?       System.Runtime.CompilerServices.Unsafe.dll
+?   ?       System.Runtime.CompilerServices.VisualC.dll
+?   ?       System.Runtime.dll
+?   ?       System.Runtime.Extensions.dll
+?   ?       System.Runtime.Handles.dll
+?   ?       System.Runtime.InteropServices.dll
+?   ?       System.Runtime.InteropServices.JavaScript.dll
+?   ?       System.Runtime.InteropServices.RuntimeInformation.dll
+?   ?       System.Runtime.Intrinsics.dll
+?   ?       System.Runtime.Loader.dll
+?   ?       System.Runtime.Numerics.dll
+?   ?       System.Runtime.Serialization.dll
+?   ?       System.Runtime.Serialization.Formatters.dll
+?   ?       System.Runtime.Serialization.Json.dll
+?   ?       System.Runtime.Serialization.Primitives.dll
+?   ?       System.Runtime.Serialization.Xml.dll
+?   ?       System.Security.AccessControl.dll
+?   ?       System.Security.Claims.dll
+?   ?       System.Security.Cryptography.Algorithms.dll
+?   ?       System.Security.Cryptography.Cng.dll
+?   ?       System.Security.Cryptography.Csp.dll
+?   ?       System.Security.Cryptography.dll
+?   ?       System.Security.Cryptography.Encoding.dll
+?   ?       System.Security.Cryptography.OpenSsl.dll
+?   ?       System.Security.Cryptography.Pkcs.dll
+?   ?       System.Security.Cryptography.Primitives.dll
+?   ?       System.Security.Cryptography.X509Certificates.dll
+?   ?       System.Security.Cryptography.Xml.dll
+?   ?       System.Security.dll
+?   ?       System.Security.Principal.dll
+?   ?       System.Security.Principal.Windows.dll
+?   ?       System.Security.SecureString.dll
+?   ?       System.ServiceModel.Web.dll
+?   ?       System.ServiceProcess.dll
+?   ?       System.Text.Encoding.CodePages.dll
+?   ?       System.Text.Encoding.dll
+?   ?       System.Text.Encoding.Extensions.dll
+?   ?       System.Text.Encodings.Web.dll
+?   ?       System.Text.Json.dll
+?   ?       System.Text.RegularExpressions.dll
+?   ?       System.Threading.AccessControl.dll
+?   ?       System.Threading.Channels.dll
+?   ?       System.Threading.dll
+?   ?       System.Threading.Overlapped.dll
+?   ?       System.Threading.RateLimiting.dll
+?   ?       System.Threading.Tasks.Dataflow.dll
+?   ?       System.Threading.Tasks.dll
+?   ?       System.Threading.Tasks.Extensions.dll
+?   ?       System.Threading.Tasks.Parallel.dll
+?   ?       System.Threading.Thread.dll
+?   ?       System.Threading.ThreadPool.dll
+?   ?       System.Threading.Timer.dll
+?   ?       System.Transactions.dll
+?   ?       System.Transactions.Local.dll
+?   ?       System.ValueTuple.dll
+?   ?       System.Web.dll
+?   ?       System.Web.HttpUtility.dll
+?   ?       System.Windows.dll
+?   ?       System.Xml.dll
+?   ?       System.Xml.Linq.dll
+?   ?       System.Xml.ReaderWriter.dll
+?   ?       System.Xml.Serialization.dll
+?   ?       System.Xml.XDocument.dll
+?   ?       System.Xml.XmlDocument.dll
+?   ?       System.Xml.XmlSerializer.dll
+?   ?       System.Xml.XPath.dll
+?   ?       System.Xml.XPath.XDocument.dll
+?   ?       WindowsBase.dll
+?   ?       
+?   ????ru
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????runtimes
+?   ?   ????win
+?   ?       ????lib
+?   ?           ????net7.0
+?   ?                   Microsoft.Win32.SystemEvents.dll
+?   ?                   System.Drawing.Common.dll
+?   ?                   
+?   ????tr
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????wwwroot
+?   ?   ?   favicon.ico
+?   ?   ?   favicon.ico.br
+?   ?   ?   favicon.ico.gz
+?   ?   ?   MyExcelApp.styles.css
+?   ?   ?   MyExcelApp.styles.css.br
+?   ?   ?   MyExcelApp.styles.css.gz
+?   ?   ?   
+?   ?   ????css
+?   ?   ?       fonts.css
+?   ?   ?       fonts.css.br
+?   ?   ?       fonts.css.gz
+?   ?   ?       site.css
+?   ?   ?       site.css.br
+?   ?   ?       site.css.gz
+?   ?   ?       
+?   ?   ????ExcelFiles
+?   ?   ?       14050426_1421.xlsx
+?   ?   ?       14050426_2022.xlsx
+?   ?   ?       14050426_3592.xlsx
+?   ?   ?       14050426_3771.xlsx
+?   ?   ?       14050426_4973.xlsx
+?   ?   ?       14050426_5035.xlsx
+?   ?   ?       14050426_6371_v001.xlsx
+?   ?   ?       14050426_6583.xlsx
+?   ?   ?       14050426_7261.xlsx
+?   ?   ?       14050426_8161.xlsx
+?   ?   ?       20260717141846_5196_v001.xlsx
+?   ?   ?       20260717143153_6248_v001.xlsx
+?   ?   ?       
+?   ?   ????fonts
+?   ?   ?       Vazir-Black.woff2
+?   ?   ?       Vazir-Bold.woff2
+?   ?   ?       Vazir.woff2
+?   ?   ?       
+?   ?   ????js
+?   ?   ?       site.js
+?   ?   ?       site.js.br
+?   ?   ?       site.js.gz
+?   ?   ?       
+?   ?   ????lib
+?   ?       ????bootstrap
+?   ?       ?   ?   LICENSE
+?   ?       ?   ?   
+?   ?       ?   ????dist
+?   ?       ?       ????css
+?   ?       ?       ?       bootstrap-grid.css
+?   ?       ?       ?       bootstrap-grid.css.br
+?   ?       ?       ?       bootstrap-grid.css.gz
+?   ?       ?       ?       bootstrap-grid.css.map
+?   ?       ?       ?       bootstrap-grid.css.map.br
+?   ?       ?       ?       bootstrap-grid.css.map.gz
+?   ?       ?       ?       bootstrap-grid.min.css
+?   ?       ?       ?       bootstrap-grid.min.css.br
+?   ?       ?       ?       bootstrap-grid.min.css.gz
+?   ?       ?       ?       bootstrap-grid.min.css.map
+?   ?       ?       ?       bootstrap-grid.min.css.map.br
+?   ?       ?       ?       bootstrap-grid.min.css.map.gz
+?   ?       ?       ?       bootstrap-grid.rtl.css
+?   ?       ?       ?       bootstrap-grid.rtl.css.br
+?   ?       ?       ?       bootstrap-grid.rtl.css.gz
+?   ?       ?       ?       bootstrap-grid.rtl.css.map
+?   ?       ?       ?       bootstrap-grid.rtl.css.map.br
+?   ?       ?       ?       bootstrap-grid.rtl.css.map.gz
+?   ?       ?       ?       bootstrap-grid.rtl.min.css
+?   ?       ?       ?       bootstrap-grid.rtl.min.css.br
+?   ?       ?       ?       bootstrap-grid.rtl.min.css.gz
+?   ?       ?       ?       bootstrap-grid.rtl.min.css.map
+?   ?       ?       ?       bootstrap-grid.rtl.min.css.map.br
+?   ?       ?       ?       bootstrap-grid.rtl.min.css.map.gz
+?   ?       ?       ?       bootstrap-reboot.css
+?   ?       ?       ?       bootstrap-reboot.css.br
+?   ?       ?       ?       bootstrap-reboot.css.gz
+?   ?       ?       ?       bootstrap-reboot.css.map
+?   ?       ?       ?       bootstrap-reboot.css.map.br
+?   ?       ?       ?       bootstrap-reboot.css.map.gz
+?   ?       ?       ?       bootstrap-reboot.min.css
+?   ?       ?       ?       bootstrap-reboot.min.css.br
+?   ?       ?       ?       bootstrap-reboot.min.css.gz
+?   ?       ?       ?       bootstrap-reboot.min.css.map
+?   ?       ?       ?       bootstrap-reboot.min.css.map.br
+?   ?       ?       ?       bootstrap-reboot.min.css.map.gz
+?   ?       ?       ?       bootstrap-reboot.rtl.css
+?   ?       ?       ?       bootstrap-reboot.rtl.css.br
+?   ?       ?       ?       bootstrap-reboot.rtl.css.gz
+?   ?       ?       ?       bootstrap-reboot.rtl.css.map
+?   ?       ?       ?       bootstrap-reboot.rtl.css.map.br
+?   ?       ?       ?       bootstrap-reboot.rtl.css.map.gz
+?   ?       ?       ?       bootstrap-reboot.rtl.min.css
+?   ?       ?       ?       bootstrap-reboot.rtl.min.css.br
+?   ?       ?       ?       bootstrap-reboot.rtl.min.css.gz
+?   ?       ?       ?       bootstrap-reboot.rtl.min.css.map
+?   ?       ?       ?       bootstrap-reboot.rtl.min.css.map.br
+?   ?       ?       ?       bootstrap-reboot.rtl.min.css.map.gz
+?   ?       ?       ?       bootstrap-utilities.css
+?   ?       ?       ?       bootstrap-utilities.css.br
+?   ?       ?       ?       bootstrap-utilities.css.gz
+?   ?       ?       ?       bootstrap-utilities.css.map
+?   ?       ?       ?       bootstrap-utilities.css.map.br
+?   ?       ?       ?       bootstrap-utilities.css.map.gz
+?   ?       ?       ?       bootstrap-utilities.min.css
+?   ?       ?       ?       bootstrap-utilities.min.css.br
+?   ?       ?       ?       bootstrap-utilities.min.css.gz
+?   ?       ?       ?       bootstrap-utilities.min.css.map
+?   ?       ?       ?       bootstrap-utilities.min.css.map.br
+?   ?       ?       ?       bootstrap-utilities.min.css.map.gz
+?   ?       ?       ?       bootstrap-utilities.rtl.css
+?   ?       ?       ?       bootstrap-utilities.rtl.css.br
+?   ?       ?       ?       bootstrap-utilities.rtl.css.gz
+?   ?       ?       ?       bootstrap-utilities.rtl.css.map
+?   ?       ?       ?       bootstrap-utilities.rtl.css.map.br
+?   ?       ?       ?       bootstrap-utilities.rtl.css.map.gz
+?   ?       ?       ?       bootstrap-utilities.rtl.min.css
+?   ?       ?       ?       bootstrap-utilities.rtl.min.css.br
+?   ?       ?       ?       bootstrap-utilities.rtl.min.css.gz
+?   ?       ?       ?       bootstrap-utilities.rtl.min.css.map
+?   ?       ?       ?       bootstrap-utilities.rtl.min.css.map.br
+?   ?       ?       ?       bootstrap-utilities.rtl.min.css.map.gz
+?   ?       ?       ?       bootstrap.css
+?   ?       ?       ?       bootstrap.css.br
+?   ?       ?       ?       bootstrap.css.gz
+?   ?       ?       ?       bootstrap.css.map
+?   ?       ?       ?       bootstrap.css.map.br
+?   ?       ?       ?       bootstrap.css.map.gz
+?   ?       ?       ?       bootstrap.min.css
+?   ?       ?       ?       bootstrap.min.css.br
+?   ?       ?       ?       bootstrap.min.css.gz
+?   ?       ?       ?       bootstrap.min.css.map
+?   ?       ?       ?       bootstrap.min.css.map.br
+?   ?       ?       ?       bootstrap.min.css.map.gz
+?   ?       ?       ?       bootstrap.rtl.css
+?   ?       ?       ?       bootstrap.rtl.css.br
+?   ?       ?       ?       bootstrap.rtl.css.gz
+?   ?       ?       ?       bootstrap.rtl.css.map
+?   ?       ?       ?       bootstrap.rtl.css.map.br
+?   ?       ?       ?       bootstrap.rtl.css.map.gz
+?   ?       ?       ?       bootstrap.rtl.min.css
+?   ?       ?       ?       bootstrap.rtl.min.css.br
+?   ?       ?       ?       bootstrap.rtl.min.css.gz
+?   ?       ?       ?       bootstrap.rtl.min.css.map
+?   ?       ?       ?       bootstrap.rtl.min.css.map.br
+?   ?       ?       ?       bootstrap.rtl.min.css.map.gz
+?   ?       ?       ?       
+?   ?       ?       ????js
+?   ?       ?               bootstrap.bundle.js
+?   ?       ?               bootstrap.bundle.js.br
+?   ?       ?               bootstrap.bundle.js.gz
+?   ?       ?               bootstrap.bundle.js.map
+?   ?       ?               bootstrap.bundle.js.map.br
+?   ?       ?               bootstrap.bundle.js.map.gz
+?   ?       ?               bootstrap.bundle.min.js
+?   ?       ?               bootstrap.bundle.min.js.br
+?   ?       ?               bootstrap.bundle.min.js.gz
+?   ?       ?               bootstrap.bundle.min.js.map
+?   ?       ?               bootstrap.bundle.min.js.map.br
+?   ?       ?               bootstrap.bundle.min.js.map.gz
+?   ?       ?               bootstrap.esm.js
+?   ?       ?               bootstrap.esm.js.br
+?   ?       ?               bootstrap.esm.js.gz
+?   ?       ?               bootstrap.esm.js.map
+?   ?       ?               bootstrap.esm.js.map.br
+?   ?       ?               bootstrap.esm.js.map.gz
+?   ?       ?               bootstrap.esm.min.js
+?   ?       ?               bootstrap.esm.min.js.br
+?   ?       ?               bootstrap.esm.min.js.gz
+?   ?       ?               bootstrap.esm.min.js.map
+?   ?       ?               bootstrap.esm.min.js.map.br
+?   ?       ?               bootstrap.esm.min.js.map.gz
+?   ?       ?               bootstrap.js
+?   ?       ?               bootstrap.js.br
+?   ?       ?               bootstrap.js.gz
+?   ?       ?               bootstrap.js.map
+?   ?       ?               bootstrap.js.map.br
+?   ?       ?               bootstrap.js.map.gz
+?   ?       ?               bootstrap.min.js
+?   ?       ?               bootstrap.min.js.br
+?   ?       ?               bootstrap.min.js.gz
+?   ?       ?               bootstrap.min.js.map
+?   ?       ?               bootstrap.min.js.map.br
+?   ?       ?               bootstrap.min.js.map.gz
+?   ?       ?               
+?   ?       ????jquery
+?   ?       ?   ?   LICENSE.txt
+?   ?       ?   ?   LICENSE.txt.br
+?   ?       ?   ?   LICENSE.txt.gz
+?   ?       ?   ?   
+?   ?       ?   ????dist
+?   ?       ?           jquery.js
+?   ?       ?           jquery.js.br
+?   ?       ?           jquery.js.gz
+?   ?       ?           jquery.min.js
+?   ?       ?           jquery.min.js.br
+?   ?       ?           jquery.min.js.gz
+?   ?       ?           jquery.min.map
+?   ?       ?           jquery.min.map.br
+?   ?       ?           jquery.min.map.gz
+?   ?       ?           jquery.slim.js
+?   ?       ?           jquery.slim.js.br
+?   ?       ?           jquery.slim.js.gz
+?   ?       ?           jquery.slim.min.js
+?   ?       ?           jquery.slim.min.js.br
+?   ?       ?           jquery.slim.min.js.gz
+?   ?       ?           jquery.slim.min.map
+?   ?       ?           jquery.slim.min.map.br
+?   ?       ?           jquery.slim.min.map.gz
+?   ?       ?           
+?   ?       ????jquery-validation
+?   ?       ?   ?   LICENSE.md
+?   ?       ?   ?   LICENSE.md.br
+?   ?       ?   ?   LICENSE.md.gz
+?   ?       ?   ?   
+?   ?       ?   ????dist
+?   ?       ?           additional-methods.js
+?   ?       ?           additional-methods.js.br
+?   ?       ?           additional-methods.js.gz
+?   ?       ?           additional-methods.min.js
+?   ?       ?           additional-methods.min.js.br
+?   ?       ?           additional-methods.min.js.gz
+?   ?       ?           jquery.validate.js
+?   ?       ?           jquery.validate.js.br
+?   ?       ?           jquery.validate.js.gz
+?   ?       ?           jquery.validate.min.js
+?   ?       ?           jquery.validate.min.js.br
+?   ?       ?           jquery.validate.min.js.gz
+?   ?       ?           
+?   ?       ????jquery-validation-unobtrusive
+?   ?           ?   LICENSE.txt
+?   ?           ?   LICENSE.txt.br
+?   ?           ?   LICENSE.txt.gz
+?   ?           ?   
+?   ?           ????dist
+?   ?                   jquery.validate.unobtrusive.js
+?   ?                   jquery.validate.unobtrusive.js.br
+?   ?                   jquery.validate.unobtrusive.js.gz
+?   ?                   jquery.validate.unobtrusive.min.js
+?   ?                   jquery.validate.unobtrusive.min.js.br
+?   ?                   jquery.validate.unobtrusive.min.js.gz
+?   ?                   
+?   ????zh-Hans
+?   ?       Microsoft.CodeAnalysis.CSharp.resources.dll
+?   ?       Microsoft.CodeAnalysis.resources.dll
+?   ?       
+?   ????zh-Hant
+?           Microsoft.CodeAnalysis.CSharp.resources.dll
+?           Microsoft.CodeAnalysis.resources.dll
+?           
+????Views
+?   ????Home
+?           FileList.cshtml
+?           Index.cshtml
+?           
+????wwwroot
+    ?   favicon.ico
+    ?   version.json
+    ?   version.txt
+    ?   
+    ????css
+    ?       fonts.css
+    ?       site.css
+    ?       
+    ????ExcelFiles
+    ?       14050426_1421.xlsx
+    ?       14050426_2022.xlsx
+    ?       14050426_3592.xlsx
+    ?       14050426_3771.xlsx
+    ?       14050426_4973.xlsx
+    ?       14050426_5035.xlsx
+    ?       14050426_6371_v001.xlsx
+    ?       14050426_6583.xlsx
+    ?       14050426_7261.xlsx
+    ?       14050426_8161.xlsx
+    ?       20260717141846_5196_v001.xlsx
+    ?       20260717143153_6248_v001.xlsx
+    ?       
+    ????fonts
+    ?       Vazir-Black.woff2
+    ?       Vazir-Bold.woff2
+    ?       Vazir.woff2
+    ?       
+    ????js
+    ?       site.js
+    ?       
+    ????lib
+        ????bootstrap
+        ?   ?   LICENSE
+        ?   ?   
+        ?   ????dist
+        ?       ????css
+        ?       ?       bootstrap-grid.css
+        ?       ?       bootstrap-grid.css.map
+        ?       ?       bootstrap-grid.min.css
+        ?       ?       bootstrap-grid.min.css.map
+        ?       ?       bootstrap-grid.rtl.css
+        ?       ?       bootstrap-grid.rtl.css.map
+        ?       ?       bootstrap-grid.rtl.min.css
+        ?       ?       bootstrap-grid.rtl.min.css.map
+        ?       ?       bootstrap-reboot.css
+        ?       ?       bootstrap-reboot.css.map
+        ?       ?       bootstrap-reboot.min.css
+        ?       ?       bootstrap-reboot.min.css.map
+        ?       ?       bootstrap-reboot.rtl.css
+        ?       ?       bootstrap-reboot.rtl.css.map
+        ?       ?       bootstrap-reboot.rtl.min.css
+        ?       ?       bootstrap-reboot.rtl.min.css.map
+        ?       ?       bootstrap-utilities.css
+        ?       ?       bootstrap-utilities.css.map
+        ?       ?       bootstrap-utilities.min.css
+        ?       ?       bootstrap-utilities.min.css.map
+        ?       ?       bootstrap-utilities.rtl.css
+        ?       ?       bootstrap-utilities.rtl.css.map
+        ?       ?       bootstrap-utilities.rtl.min.css
+        ?       ?       bootstrap-utilities.rtl.min.css.map
+        ?       ?       bootstrap.css
+        ?       ?       bootstrap.css.map
+        ?       ?       bootstrap.min.css
+        ?       ?       bootstrap.min.css.map
+        ?       ?       bootstrap.rtl.css
+        ?       ?       bootstrap.rtl.css.map
+        ?       ?       bootstrap.rtl.min.css
+        ?       ?       bootstrap.rtl.min.css.map
+        ?       ?       
+        ?       ????js
+        ?               bootstrap.bundle.js
+        ?               bootstrap.bundle.js.map
+        ?               bootstrap.bundle.min.js
+        ?               bootstrap.bundle.min.js.map
+        ?               bootstrap.esm.js
+        ?               bootstrap.esm.js.map
+        ?               bootstrap.esm.min.js
+        ?               bootstrap.esm.min.js.map
+        ?               bootstrap.js
+        ?               bootstrap.js.map
+        ?               bootstrap.min.js
+        ?               bootstrap.min.js.map
+        ?               
+        ????jquery
+        ?   ?   LICENSE.txt
+        ?   ?   
+        ?   ????dist
+        ?           jquery.js
+        ?           jquery.min.js
+        ?           jquery.min.map
+        ?           jquery.slim.js
+        ?           jquery.slim.min.js
+        ?           jquery.slim.min.map
+        ?           
+        ????jquery-validation
+        ?   ?   LICENSE.md
+        ?   ?   
+        ?   ????dist
+        ?           additional-methods.js
+        ?           additional-methods.min.js
+        ?           jquery.validate.js
+        ?           jquery.validate.min.js
+        ?           
+        ????jquery-validation-unobtrusive
+            ?   LICENSE.txt
+            ?   
+            ????dist
+                    jquery.validate.unobtrusive.js
+                    jquery.validate.unobtrusive.min.js
+                    

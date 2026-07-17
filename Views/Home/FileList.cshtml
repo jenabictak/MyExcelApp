@@ -1,0 +1,388 @@
+@{
+    ViewData["Title"] = "لیست سندها - باربد تجارت رضوان";
+    Layout = null;
+    var files = Model as IEnumerable<dynamic> ?? new List<dynamic>();
+}
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wrapper {
+            max-width: 1100px;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 35px;
+            flex: 1;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ===== هدر بالا ===== */
+        .top-header {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            padding: 15px 25px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .top-header .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .top-header .brand .logo-icon {
+            font-size: 28px;
+        }
+        .top-header .brand .brand-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+        }
+        .top-header .brand .brand-name span {
+            color: #667eea;
+        }
+        .top-header .nav-links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .top-header .nav-links a {
+            padding: 6px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .top-header .nav-links a.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .top-header .nav-links a:not(.active) {
+            background: #f1f3f5;
+            color: #555;
+        }
+        .top-header .nav-links a:not(.active):hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .header .title-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header .title-group .icon { font-size: 32px; }
+        .header h2 { color: #333; font-size: 22px; font-weight: 700; }
+        .header .sub-title { color: #888; font-size: 14px; font-weight: normal; }
+        
+        .btn-primary {
+            padding: 10px 22px;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        th {
+            padding: 12px 10px;
+            text-align: center;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #495057;
+        }
+        .badge-product {
+            display: inline-block;
+            padding: 3px 12px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .btn-download {
+            padding: 6px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-size: 13px;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn-download:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 50px 20px;
+            color: #888;
+        }
+        .empty-state .empty-icon { font-size: 60px; display: block; margin-bottom: 15px; }
+        .empty-state h3 { color: #555; margin-bottom: 10px; }
+        
+        .footer-section {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .footer-section .count { color: #888; font-size: 14px; }
+        
+        .btn-back {
+            padding: 8px 20px;
+            background: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+        }
+        .btn-back:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+        
+        /* ===== فوتر ===== */
+        .footer {
+            background: white;
+            border-radius: 0 0 20px 20px;
+            padding: 15px 25px;
+            margin-top: 0;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            border-top: 2px solid #f0f0f0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .footer .powered {
+            font-size: 12px;
+            color: #aaa;
+        }
+        .footer .powered strong {
+            color: #667eea;
+            font-weight: 700;
+        }
+        .footer .support {
+            margin-top: 5px;
+            font-size: 13px;
+            color: #555;
+        }
+        .footer .support a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            direction: ltr;
+            display: inline-block;
+        }
+        .footer .support a:hover {
+            text-decoration: underline;
+        }
+        .footer .glass-icon {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        
+        @@media (max-width: 768px) {
+            .container { padding: 20px; }
+            .header { flex-direction: column; align-items: stretch; text-align: center; }
+            .header h2 { font-size: 18px; }
+            th, td { padding: 6px; font-size: 11px; }
+            .footer-section { flex-direction: column; text-align: center; }
+            .top-header { flex-direction: column; text-align: center; }
+            .top-header .nav-links { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- ===== هدر بالای صفحه ===== -->
+        <div class="top-header">
+            <div class="brand">
+                <span class="logo-icon">🏭</span>
+                <span class="brand-name">باربد تجارت <span>رضوان</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/Home/Index">📝 ثبت سند</a>
+                <a href="/Home/FileList" class="active">📋 لیست سندها</a>
+            </div>
+        </div>
+
+        <!-- ===== محتوای اصلی ===== -->
+        <div class="container">
+
+            <div class="header">
+                <div class="title-group">
+                    <span class="icon">📄</span>
+                    <div>
+                        <h2>لیست سندها</h2>
+                        <span class="sub-title">باربد تجارت رضوان</span>
+                    </div>
+                </div>
+                <a href="/Home/Index" class="btn-primary">➕ ثبت سند جدید</a>
+            </div>
+
+            @if (files != null && files.Any())
+            {
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>شماره سند</th>
+                                <th>نوع محصول</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>حجم</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var file in files)
+                            {
+                                <tr>
+                                    <td><span class="badge">@file.DocNumber</span></td>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(file.ProductType))
+                                        {
+                                            <span class="badge-product">@file.ProductType</span>
+                                        }
+                                        else
+                                        {
+                                            <span style="color:#aaa;">—</span>
+                                        }
+                                    </td>
+                                    <td>@file.CreatedDate</td>
+                                    <td>@file.FileSize</td>
+                                    <td>
+                                        <a href="@file.FilePath" download class="btn-download">⬇️ دانلود</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer-section">
+                    <span class="count">📊 تعداد کل: @files.Count() سند</span>
+                    <a href="/Home/Index" class="btn-back">🏠 صفحه اصلی</a>
+                </div>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <span class="empty-icon">📭</span>
+                    <h3>هیچ سندی ثبت نشده است</h3>
+                    <p style="color: #aaa;">اولین سند خود را ثبت کنید</p>
+                    <br>
+                    <a href="/Home/Index" class="btn-primary">➕ ثبت سند جدید</a>
+                </div>
+            }
+
+        </div>
+
+        <!-- ===== فوتر ===== -->
+        <div class="footer">
+            <div class="powered">
+                <span class="glass-icon">🔮</span> قدرت گرفته از <strong>اتاق شیشه‌ای بیاریکا</strong>
+            </div>
+            <div class="support">
+                📞 پشتیبانی: <a href="tel:09359679647">09359679647</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
